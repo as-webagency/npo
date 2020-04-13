@@ -1,0 +1,100 @@
+.nav
+    padding: 19px 0
+    .container
+        +flex-wrap
+        justify-content: space-between
+    &-list
+        margin: 0
+        padding: 0
+        list-style: none
+        +flex-wrap
+        &__item
+            margin-right: 84px
+            &:first-child
+                .nav-list
+                    &__link
+                        &::after
+                            content: ''
+                            background: url('../img/menu-arrow.png') no-repeat
+                            width: 12px
+                            height: 7px
+                            position: absolute
+                            top: 6px
+                            right: -22px
+            &:nth-child(2)
+                margin-right: 64px
+            &:nth-child(3)
+                margin-right: 63px
+            &:nth-child(4)
+                margin-right: 64px
+            &:nth-child(5)
+                margin-right: 62px
+            &:nth-child(6)
+                margin-right: 62px
+            &:last-child
+                margin-right: 0
+            &s
+                margin-left: 13px
+        &__link
+            font-size: 18px
+            display: block
+            color: $text
+            position: relative
+            text-transform: uppercase
+    &-search
+        &__button
+            background-color: transparent
+            border: none
+            margin: -2px -9px 0 0
+            svg 
+                width: 23px
+                height: 23px
+                fill: $search
+.search
+    &-form
+        &__group
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            padding: 0 15px
+            opacity: 0
+            visibility: hidden
+            transition: .4s
+            &.search-active
+                opacity: 1
+                visibility: visible
+        &__input
+            color: $text
+            border: none
+            padding: 0 40px
+            height: 100%
+            &::placeholder
+                font-size: 20px
+                color: rgba($text, .6)
+        &__button
+            &-close
+                background-color: transparent
+                border: none
+                position: absolute
+                top: 50%
+                right: 15px
+                transform: translateY(-50%)
+                svg
+                    width: 23px
+                    height: 23px
+                    fill: $search
+            &-search
+                background-color: transparent
+                border: none
+                position: absolute
+                top: 50%
+                left: 15px
+                transform: translateY(-50%)
+                svg
+                    width: 23px
+                    height: 23px
+                    fill: $blue
+
+            

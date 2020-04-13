@@ -1,0 +1,29 @@
+{
+  "name": "npo",
+  "version": "1.0.0",
+  "description": "OOO НПО - Сайт для агенства недвижимости",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as-webagency/npo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/as-webagency/npo/issues"
+  },
+  "homepage": "https://github.com/as-webagency/npo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}

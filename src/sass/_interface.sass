@@ -1,0 +1,53 @@
+.container
+    &__relative
+        position: relative
+.section
+    &__relative
+        position: relative
+.input
+    width: 100%
+    &::placeholder  
+        opacity: 1      
+.phone  
+    color: $text
+    display: block
+    span
+        font-weight: 500
+.email
+    color: $text 
+    display: block
+.button
+    +flex-content-center
+    width: 100%
+    padding: 10px
+    border: none
+    border-radius: 45px
+    position: relative
+    &--primary
+        text-shadow: 0px 0px 10px rgba(8, 131, 206, 0.38)
+        color: $light
+        background-color: $button
+        box-shadow: inset 0.5px 0.866px 0px 0px rgba($light, 0.12)
+    span
+        position: relative
+        z-index: 5
+        display: block
+    &::after,
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+    &::before
+        top: 0
+        left: 0
+        z-index: 2
+        border-radius: 45px
+        box-shadow: inset 10px 2px 18px 4px rgba($light, .2)
+        background-image: linear-gradient(to top, #1e97e0 0%, #1e97e0 100%),linear-gradient(to top, #64c0fb 0%, #1e97e0 100%)
+    &::after
+        top: 4px
+        left: 1px
+        border-radius: 45px
+        box-shadow: 6px 14px 30px rgba(23,150,224, .2)
+        background-color: $darkButton
