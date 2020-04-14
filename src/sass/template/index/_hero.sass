@@ -1,0 +1,97 @@
+.hero
+    &__bg
+        background: url('../img/hero/hero.jpg') center/cover no-repeat
+        width: 100%
+        min-height: 670px
+        position: relative
+    &-sides
+        +flex-wrap
+        justify-content: space-between
+        &__left
+            margin-left: 11px
+            max-width: 500px
+        &__right
+            margin-top: 47px
+        &__title
+            font-size: 45px
+            padding-top: 40px
+            margin-bottom: 5px
+        p
+            font-size: 45px
+            margin: 0
+            color: $textHover
+            max-width: 420px
+        &__somewhere
+            font-size: 30px
+            color: $text
+            margin: 16px 0 24px
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+        &__item
+            color: $text
+            font-size: 18px
+            line-height: 25px
+        &__button
+            margin: 34px 0 0 2px
+            max-width: 315px
+            height: 90px
+            span
+                font-size: 22px
+    &__scroll
+        position: absolute
+        bottom: -25px
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $lightOrange
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        &::after
+            content: ''
+            background: url('../img/hero/scroll-down.png') center no-repeat
+            width: 13px
+            height: 8px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+        &::before
+            content: ''
+            opacity: .8;
+            background-color: inherit
+            display: block
+            width: 80px
+            height: 80px
+            position: absolute
+            top: -14px
+            left: -14px
+            border-radius: 100%
+            animation: mango-pulse-scroll 2s infinite ease-in-out
+            animation-delay: .3s
+            z-index: -1
+@keyframes mango-pulse-scroll
+    0%
+        transform: scale(0)
+    50% 
+        transform: scale(1)
+    to
+        transform: scale(1)
+        opacity: 0
+.social
+    &-list
+        margin: 0
+        padding: 0
+        list-style-type: none                
+        &__item
+            margin-bottom: 9px
+            &:last-child
+                margin-bottom: 0
+        &__link
+            +flex-content-center
+            border-radius: 50%
+            background-color: $light
+            width: 51px
+            height: 51px
+            box-shadow: 0px 3px 16px 0px rgba(49, 154, 219, 0.09)
