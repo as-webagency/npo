@@ -1,0 +1,141 @@
+.offer
+    padding: 80px 0 70px
+    &__title
+        margin-left: 10px
+    &__subtitle
+        font-weight: normal
+        color: $text
+        font-size: 30px
+        margin: 0 0 32px 10px
+    &-block
+        &s
+            +flex-wrap
+            justify-content: space-between
+        &__image
+            max-width: 594px
+            width: 100%
+            height: 360px
+            box-shadow: 0px 14px 55px -40px rgba(151,198,238,1)
+            border-radius: 5px
+        &:last-child
+            .offer
+                &-block
+                    &__image
+                        max-width: 100%
+                        img
+                            margin: 0 auto
+        &__item
+            margin-bottom: 20px
+            position: relative
+            &:first-child,
+            &:last-child
+                margin-left: 12px
+            &:nth-child(1)
+                .offer-block
+                    &__title
+                        max-width: 330px
+                        &::before
+                            background: url('../img/offer/first.png') center no-repeat
+            &:nth-child(2)
+                .offer-block
+                    &__title
+                        max-width: 350px
+                        &::before
+                            background: url('../img/offer/second.png') center no-repeat
+            &:nth-child(3)
+                .offer-block
+                    &__title
+                        padding-top: 16px
+                        &::before
+                            background: url('../img/offer/уxclamation.png') center no-repeat
+                    &__bottom
+                        top: 154px
+        &__top
+            padding: 40px 0 0 70px
+            position: absolute
+            top: 0
+            left: 0
+            margin-bottom: 37px
+        &__title
+            font-size: 30px
+            color: $text
+            font-weight: 500
+            padding-left: 94px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 75px
+                height: 75px
+        &__subtitle
+            font-size: 22px
+            display: block
+            margin: 3px 0 0 95px
+        &__center
+            position: absolute
+            top: 140px
+            left: 0
+            margin-left: 75px
+            &-title
+                font-size: 18px
+                color: $text
+                font-weight: 500
+                margin-bottom: 13px
+            &-list
+                padding: 0
+                margin: 0 0 30px
+                list-style: none
+            &-item
+                font-size: 18px
+                line-height: 24px
+                color: $text
+                position: relative
+                padding-left: 18px
+                &::before
+                    content: ''
+                    width: 11px
+                    height: 2px
+                    background-color: $text
+                    position: absolute
+                    top: 12px
+                    left: -1px
+        &__bottom
+            max-width: 600px
+            margin-left: 75px
+            position: absolute
+            top: 273px
+            left: 0
+            &-link
+                font-size: 18px
+                color: $textHover
+                display: inline-block
+                border-bottom: 1px dotted $textHover
+            &-text
+                font-size: 18px
+                line-height: 24px
+                margin: 0 0 29px
+                strong
+                    font-weight: 500
+                span
+                    font-weight: 500
+                    display: inline-block
+                    color: $textHover
+            &-button
+                width: 205px
+                height: 60px
+            &-mark
+                color: $text
+                position: absolute
+                top: 99px
+                left: 257px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    background: url('../img/offer/bookmark.png') center no-repeat
+                    width: 14px
+                    height: 17px
+                    margin-left: -25px

@@ -4,6 +4,18 @@
 .section
     &__relative
         position: relative
+.header
+    &__relative
+        position: relative
+        z-index: 1  
+.burger--open .burger__top
+    transform: rotate(45deg)
+    top: 10px              
+.burger--open .burger__center
+    opacity: 0       
+.burger--open .burger__bottom
+    transform: rotate(-45deg)
+    top: 10px              
 .input
     width: 100%
     &::placeholder  
@@ -56,6 +68,18 @@
         border-radius: 45px
         box-shadow: 6px 14px 30px rgba($darkButton, .2)
         background-color: $darkButton
+.wiget-phone
+    &__button
+        &--primary    
+            text-shadow: 0px 0px 10px rgba(8, 131, 206, 0.38)
+            color: $light
+            background-color: $button
+            box-shadow: inset 0.5px 0.866px 0px 0px rgba($light, 0.12)
+            transition: .4s
+            &:hover
+                background-color: $buttonHover
+            &:focus
+                background-color: $buttonActive    
 .title
     margin: 0
     font-size: 40px
