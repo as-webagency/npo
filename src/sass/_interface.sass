@@ -86,3 +86,39 @@
     font-weight: 500
     &--primary
         color: $textHover
+.label
+    font-size: 18px
+    display: block
+    &--primary     
+        color: $text
+    &__relative
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+.input
+    border: none
+    border-bottom: 1px solid $border
+    font-size: 22px
+    &--primary
+        color: $text
+        background-color: transparent
+    &::placeholder
+        color: rgba($text, .6)
+.policy
+    font-size: 13px
+    display: inline-block
+    padding-left: 27px
+    &--primary
+        color: $text  
+    &__link
+        transition: .4s
+        display: inline-block
+        color: $textHover
+        &:hover
+            color: $orangeHover
+    &__relative
+        position: relative
+        &::before
+            content: ''
+            position: absolute

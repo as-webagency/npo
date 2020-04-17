@@ -1,0 +1,79 @@
+.about-company
+    padding: 78px 0
+    &__title
+        margin-left: 12px
+        margin-bottom: 26px
+    &-sides
+        +flex-wrap
+        justify-content: space-between
+        &__text
+            p
+                font-size: 20px
+                color: $text
+                line-height: 24px
+                margin: 0 0 16px
+        &__assessment
+            font-size: 20px
+            color: $text
+            font-style: italic
+            +flex-items-center
+            margin-top: -40px
+            margin-bottom: -11px
+        &__left
+            max-width: 515px
+            margin-left: 12px
+        &__right
+            position: relative
+        &__link
+            display: inline-block
+            font-size: 20px
+            color: $textHover
+            border-bottom: 1px dotted $textHover
+            transition: .4s
+            &:hover
+                color: $orangeHover
+                border-bottom: 1px dotted $orangeHover
+        &__block
+            margin: 5px 
+            width: 256px
+            height: 193px
+            +flex-content-center
+            background-color: $light
+            box-shadow: 0px 0px 40px 0px rgba(71, 101, 135, 0.06)      
+            &:first-child
+                position: relative
+                &::after
+                    content: ''
+                    display: block
+                    width: 35px
+                    height: 35px
+                    background-color: $light
+                    box-shadow: 0 0 40px rgba(71,101,135,0.06)
+                    position: absolute
+                    bottom: -24px
+                    right: -24px
+                    transform: rotate(45deg)
+                    border: 8px solid #f4f5f6
+        &__arrow
+            .slick-arrow.slick-hidden
+                display: block 
+            &-prev,
+            &-next
+                cursor: pointer
+                position: absolute
+                right: 0
+                width: 56px
+                height: 56px
+                border-radius: 50%
+                box-shadow: -0.521px 2.954px 30px 0px rgba(241, 241, 241, 0.75)
+                z-index: 10
+            &-prev
+                top: 208px  
+                background: url('../img/about_company/prev.png') center no-repeat
+            &-next
+                top: 142px  
+                background: url('../img/about_company/next.png') center no-repeat
+        &__slide
+            max-width: 600px
+            .slick-slide
+                +flex-wrap

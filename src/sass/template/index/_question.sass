@@ -1,0 +1,115 @@
+.question
+    padding: 81px 0 72px
+    &__bg
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: -65px
+            left: 155px
+            background: url('../img/questions/clip.png') center no-repeat
+            width: 134px
+            height: 110px
+    &--primary
+        background-color: $lightBlue
+    &__title
+        margin-left: 12px
+    &__subtitle
+        font-size: 22px
+        color: $text
+        margin: 16px 0 0 12px
+    &__button
+        display: none
+    &-side
+        +flex-wrap
+        justify-content: space-between
+        &__left
+            position: relative
+        &__image
+            max-width: 535px
+            width: 100%
+            position: absolute
+            bottom: -68px
+            left: 70px
+            img
+                max-width: 535px
+                height: 554px
+    &-block
+        border-radius: 3px
+        background-color: $light
+        box-shadow: 0px 0px 60px 0px rgba(53, 161, 225, 0.06)
+        &__size
+            min-width: 460px
+            width: 100%
+            padding: 10px
+            position: relative
+            top: -78px
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: -62px
+                background: url('../img/form/arrow-form.png') center no-repeat
+                width: 62px
+                height: 57px
+                background-color: $boxArrow
+                background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(255,247,235) 0%, rgb(255,238,213) 73%, rgb(254,228,191) 100%)
+                box-shadow: 0px 2px 8px 0px rgba(208, 90, 20, 0.03)
+                border-radius: 4px 0 0 4px
+        &__inner
+            border: 1px dotted rgba(100, 192, 251, .549)
+            min-width: 440px
+            width: 100%
+            padding: 49px 70px 80px 50px
+        &__group
+            margin-bottom: 30px
+            &:nth-child(1)
+                .label
+                    &__relative
+                        &::before
+                            top: 0
+                            left: 0
+                            background: url('../img/form/name.png') center no-repeat
+                            width: 16px
+                            height: 18px
+                .question-block
+                    &__label
+                        margin-bottom: 11px
+            &:nth-child(2)
+                margin-bottom: 42px
+                .label
+                    &__relative
+                        &::before
+                            top: 0
+                            left: 0
+                            background: url('../img/form/phone.png') center no-repeat
+                            width: 16px
+                            height: 16px
+                .question-block
+                    &__label
+                        margin-bottom: 12px
+            &:nth-child(3)
+                margin-bottom: 21px
+            &:nth-child(4)
+                margin-bottom: -3px
+                .policy
+                    &__relative
+                        &::before
+                            top: -4px
+                            left: 4px
+                            background: url('../img/form/policy.png') center no-repeat
+                            width: 12px
+                            height: 18px
+        &__label
+            padding-left: 25px
+            margin-bottom: 20px
+        &__input
+            padding: 0 5px
+            height: 40px
+        &__button
+            max-width: 320px
+            height: 92px
+            span
+                font-size: 22px
+        &__policy
+            max-width: 310px
