@@ -1,0 +1,106 @@
+.causes
+    &__bg
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: url('../img/causes/causes_bg.png') center no-repeat
+            width: 100%
+            min-height: 650px
+    &-wrap
+        +flex-items-center
+        +wrap
+        &__number
+            font-family: 'Myriad Pro', sans-serif
+            font-size: 130px
+            font-weight: bold
+            color: rgb(46, 148, 237)
+            text-shadow: 0.418px 2.971px 10px rgba(31, 150, 242, 0.32)
+            margin: 7px 20px 0 12px
+        &__text
+            margin-top: 10px
+            font-size: 30px
+            color: $text
+            max-width: 300px
+            span
+                font-weight: 500
+                font-size: 40px
+                color: $textHover
+        &__size
+            margin-bottom: 45px
+    &-block
+        +flex-wrap
+        &s
+            .slick
+                &-prev,
+                &-next
+                    display: none !important
+            &__size
+                margin-left: 15px
+        &__box
+            margin-top: -9px
+            margin-left: 6px
+            background-color: $light
+            box-shadow: 0px 0px 45px 0px rgba(71, 101, 135, 0.06)
+            width: 72px
+            height: 72px
+            +flex-content-center
+        &__title
+            font-weight: 500
+            font-size: 20px
+            color: $text
+            max-width: 190px
+            margin-bottom: 25px
+        &__text
+            font-size: 18px
+            color: $text
+            margin: 0
+            max-width: 230px
+        &__size
+            position: relative 
+            margin: 35px 0 57px 10px
+        &__left
+            margin-right: 28px 
+        &__number
+            position: absolute
+            top: -23px
+            left: 3px
+            font-weight: 500
+            color: $text
+            font-size: 13px
+            border-radius: 50%
+            +flex-content-center
+            background-image: radial-gradient( 50% 50%, circle closest-side, rgb(255,247,235) 0%, rgb(255,238,213) 76%, rgb(254,228,191) 100%)
+            box-shadow: -0.763px 3.927px 7px 0px rgba(193, 104, 51, 0.03)
+            width: 23px
+            height: 23px
+            &::before
+                content: ''
+                opacity: .8
+                background-image: radial-gradient( 50% 50%, circle closest-side, rgb(255,247,235) 0%, rgb(255,238,213) 76%, rgb(254,228,191) 100%)
+                display: block
+                width: 40px
+                height: 40px
+                position: absolute
+                top: -10px
+                left: -10px
+                border-radius: 100%
+                animation: causes-pulse 2s infinite ease-in-out
+                animation-delay: .3s
+                z-index: -1
+    &-slide
+        &__item
+            +flex-wrap
+            justify-content: space-between             
+@keyframes causes-pulse
+    0%
+        transform: scale(0)
+    50% 
+        transform: scale(1)
+    to
+        transform: scale(1)
+        opacity: 0        

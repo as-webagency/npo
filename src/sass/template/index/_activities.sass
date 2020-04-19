@@ -1,0 +1,84 @@
+.activities
+    padding: 124px 0 200px
+    &__title
+        margin-left: 12px
+    &__subtitle
+        color: $text
+        display: block
+        font-size: 30px
+        margin-left: 12px
+        margin-bottom: 36px
+    &-slide
+        &r
+            &__size
+                max-width: 1000px
+                margin: 0 auto
+                position: relative
+        &__image
+            position: relative
+            max-width: 310px
+            width: 100%
+            height: 440px
+            &:hover
+                .activities-slide
+                    &__fancy
+                        opacity: 1
+                        visibility: visible
+                        &::before
+                            opacity: 1
+                            visibility: visible
+        &__fancy
+            display: block    
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 97px
+            height: 97px
+            border-radius: 50%
+            background-image: linear-gradient( 90deg, rgb(8,142,219) 0%, rgb(8,131,206) 0%, rgb(54,162,229) 53%, rgb(100,192,251) 100%)
+            box-shadow: 0.262px 4.993px 18px 0px rgba(95, 189, 249, 0.48)
+            transition: .4s
+            opacity: 0
+            visibility: hidden
+            &::before
+                content: ''
+                opacity: 0
+                visibility: hidden
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                background: url('../img/activities/search-plus.svg') center no-repeat
+                width: 32px
+                height: 31px
+                z-index: 3
+                transition: .4s
+                cursor: pointer
+    &-arrow
+        &__prev,
+        &__next
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            border-radius: 50%
+            width: 54px
+            height: 54px
+            cursor: pointer
+            background-color: $light
+            box-shadow: -0.572px 2.945px 11px 0px rgba($black, 0.2)
+            transition: box-shadow 0.4s ease-in-out
+            z-index: 5
+        
+        &__prev
+            left: -105px
+            background: url('../img/about_company/prev.png') center no-repeat
+            &:hover
+                background-color: #fef3e2
+                box-shadow: -0.572px 2.945px 11px 0px rgba($black, 0.2)
+        &__next
+            right: -115px
+            background: url('../img/about_company/next.png') center no-repeat
+            &:hover
+                background-color: #fef3e2
+                box-shadow: -0.572px 2.945px 11px 0px rgba($black, 0.2)

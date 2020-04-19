@@ -1,0 +1,65 @@
+.footer
+    padding: 40px 0 65px
+    &--primary
+        background-color: $lightBlue
+    &__bg
+        position: relative
+        &::before
+            content: ''
+            background: url('../img/footer.png') center/cover no-repeat
+            width: 100%
+            min-height: 228px
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+    .container
+        +flex-wrap
+        justify-content: space-between
+    &__info
+        color: $text
+        margin: 18px 0
+    &__link
+        color: rgba($text, .6)
+        transition: .4s
+        display: block
+        &:hover
+            color: $orangeHover    
+    &__title
+        font-weight: 500    
+        font-size: 16px
+        margin: 0 0 12px
+        color: $textHover
+    &__address
+        color: $text      
+        max-width: 220px 
+        margin: 0
+    &__socials
+        .social-list
+            +flex-wrap
+            &__item
+                margin: 0 3px
+    &__phone,
+    &__email
+        font-size: 18px
+        display: block
+    &-col
+        &__item
+            &:nth-child(1)
+                margin-left: 12px
+            &:nth-child(2)
+                margin-left: 13px
+            &:nth-child(3)
+                margin-left: 13px
+            &:nth-child(4)
+                .footer
+                    &__title
+                        margin-left: 7px
+            &:nth-child(5)
+                margin-right: -12px
+.requisites-list
+    padding: 0
+    margin: 0
+    list-style: none
+    &__item  
+        color: $text      

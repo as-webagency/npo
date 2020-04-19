@@ -1,9 +1,51 @@
+@media (max-width: 1800px)
+    .call-appraiser
+        &__relative
+            &::after
+                right: 0
+                background-size: contain
+                max-width: 320px
+@media (max-width: 1720px)
+    .call-appraiser
+        &__relative
+            &::after
+                right: 0
+                background-size: contain
+                max-width: 280px
+@media (max-width: 1600px)
+    .call-appraiser
+        &__relative
+            &::after
+                display: none
+@media (max-width: 1500px)
+    .call-appraiser
+        &__relative
+            &::before
+                background-size: 70%
+                max-width: 900px
+                bottom: -40px
+@media (max-width: 1400px)
+    .call-appraiser
+        &__relative
+            &::before
+                left: 0
 @media (max-width: 1350px)
+    .call-appraiser
+        &__relative
+            &::before
+                background-size: 100%
+                max-width: 650px
+                bottom: -60px
     .question
         &__bg
             &::before
                 left: 50px
 @media (max-width: 1280px)
+    .activities-arrow
+        &__next
+            right: -50px
+        &__prev
+            left: -70px
     .header
         &__info
             margin: 7px 0 0
@@ -53,6 +95,70 @@
                     .offer-block
                         &__bottom
                             top: 125px       
+@media (max-width: 1170px)
+    .activities
+        &-slide
+            &r
+                &__size
+                    max-width: 800px
+            &__image
+                max-width: 250px
+                height: 355px
+    .about-company
+        &-sides
+            &__text 
+                p
+                    font-size: 18px
+            &__assessment
+                font-size: 16px
+                margin-top: -10px
+            &__left
+                max-width: 460px 
+            &__block
+                width: 190px
+                height: 144px
+            &__slide
+                max-width: 480px
+            &__arrow
+                &-next
+                    top: 92px
+                &-prev
+                    top: 165px
+            &__image
+                max-width: 80%
+@media (max-width: 1150px)
+    .footer-col
+        &__item
+            &:nth-child(2)
+                margin-left: 0 
+@media (max-width: 1143px) 
+    .causes
+        &__bg
+            min-height: 800px
+        &-block
+            &s
+                &__size
+                    max-width: 350px
+                    margin: 0 auto
+                .slick
+                    &-dots
+                        +flex
+                        justify-content: center
+                        padding: 0
+                        margin: 0
+                        list-style-type: none
+                        li
+                            width: 14px
+                            height: 14px
+                            border-radius: 50%
+                            border: 2px solid $textHover
+                            margin-right: 10px
+                            &:last-child
+                                margin-right: 0
+                            button
+                                display: none
+                        li.slick-active
+                            background-color: $textHover
 @media (max-width: 1140px) 
     .question
         padding: 81px 0 40px
@@ -87,7 +193,106 @@
         &-search
             &__button
                 margin: 3px 0 0   
+@media (max-width: 1080px)
+    .call-appraiser
+        &__relative
+            &::before
+                bottom: -25px
+        &-side
+            &__title
+                font-size: 32px
+                span
+                    font-size: 26px
+            &__subtitle
+                font-size: 20px
+            &__text
+                max-width: 440px
+                p
+                    font-size: 18px
+    .causes
+        &-wrap
+            &__number
+                font-size: 102px
+            &__text 
+                font-size: 26px
+                max-width: 260px
+                span
+                    font-size: 32px
+        &-block
+            &__left
+                margin-right: 15px
+@media (max-width: 1050px)
+    .requisites-list
+        &__item
+            font-size: 15px
+    .footer
+        &__address
+            font-size: 15px
+        &__phone, 
+        &__email
+            font-size: 16px
+        &-col
+            &__item
+                &:nth-child(5)
+                    margin-right: 0
+                    margin-left: 10px
 @media (max-width: 1024px)
+    .footer
+        &__info,
+        &__link
+            font-size: 15px
+    .call-appraiser
+        &-block
+            &__title
+                font-size: 26px
+            &__input
+                font-size: 20px
+                &::placeholder
+                    font-size: 20px
+            &__group
+                &:nth-child(4) 
+                    .call-appraiser
+                        &-block
+                            &__label
+                                font-size: 16px
+            &__button 
+                span
+                    font-size: 20px
+    .activities
+        &__subtitle
+            font-size: 26px
+    .causes
+        &-wrap
+            &__size
+                margin-bottom: 39px
+            &__number
+                margin: -3px 18px 0 14px
+    .about-company
+        padding: 64px 0
+        &__title
+            margin-bottom: 28px
+        &-sides
+            &__left
+                margin-left: 14px
+            &__text
+                p
+                    line-height: 22px
+            &__assessment
+                margin-top: -44px
+            &__link
+                margin-top: -3px
+                font-size: 18px
+            &__block
+                &:first-child
+                    &::after
+                        bottom: -22px
+                        right: -22px
+            &__arrow
+                &-prev
+                    top: 158px
+                    right: 15px
+                &-next
+                    right: 15px
     .label
         font-size: 16px
     .policy
@@ -247,9 +452,8 @@
                 font-size: 38px
                 padding-top: 42px
                 margin-bottom: 4px
-            p 
-                font-size: 38px
                 max-width: 370px   
+                line-height: 44px
             &__somewhere
                 font-size: 26px
                 margin: 12px 0 18px
@@ -259,6 +463,8 @@
             &__button
                 font-size: 20px
                 margin: 35px 0 0 4px
+            &__left
+                margin-left: 15px
             &__right
                 margin-top: 50px
                 margin-right: 16px
@@ -437,6 +643,54 @@
     .wiget-phone
         bottom: 15%
 @media (max-width: 1020px)
+    .footer 
+        .container
+            max-width: 760px
+            position: relative
+        &__title
+            display: none
+        &-col
+            &__item
+                &:nth-child(5)
+                    position: absolute
+                    top: 70px
+                    right: 75px
+                &:nth-child(4)
+                    position: absolute
+                    top: 70px
+                    right: 37%
+    .activities
+        padding: 120px 0 150px
+        &-slide
+            &r
+                &__size
+                    max-width: 500px
+        &-arrow
+            &__next
+                right: -115px
+            &__prev
+                left: -105px
+    .call-appraiser
+        &-side
+            flex-direction: column
+            &__text
+                max-width: 100%
+            &__message
+                max-width: 100%
+        &__relative
+            &::before
+                bottom: auto
+                left: auto
+                top: -40px
+                right: 0
+                max-width: 500px
+                min-height: 250px
+        &-block
+            &__size
+                margin: -90px auto 0
+    .message__out
+        top: -480px
+        right: 120px
     .header
         .container
             max-width: 762px
@@ -472,6 +726,28 @@
         right: 4%
         bottom: 22%            
 @media (max-width: 1000px)
+    .about-company
+        &-sides
+            +flex-column
+            &__left
+                max-width: 100%
+            &__assessment
+                margin-top: -10px
+            &__right
+                margin-top: 25px
+            &__slide
+                margin: 0 auto
+                max-width: 400px
+            &__arrow
+                &-prev,
+                &-next
+                    top: 50%
+                    transform: translateY(-50%)
+                &-prev
+                    right: auto
+                    left: 15px
+                &-next
+
     .offer
         .container
             max-width: 768px
@@ -527,10 +803,131 @@
                 margin-top: 35px
             &__image
                 left: -90px   
-@media (max-width: 768px)     
+@media (max-width: 860px)
+    .call-appraiser
+        &__relative
+            &::before
+                max-width: 400px
+    .message
+        &__out
+            top: -470px
+            right: 60px  
+@media (max-width: 768px) 
+    .activities
+        padding: 70px 0 100px
+        &__title
+            font-size: 28px
+        &__subtitle 
+            font-size: 24px
+    .call-appraiser
+        padding: 80px 0
+        &-side
+            &__title
+                font-size: 28px
+                span
+                    font-size: 24px
+            &__subtitle
+                max-width: 280px
+                margin-bottom: 15px
+            &__text 
+                p
+                    margin: 0 0 15px
+        &-block
+            &__size
+                margin: -110px auto 0
+                max-width: 410px
+            &__inner
+                padding: 50px 35px 40px
+    .causes
+        &-wrap
+            &__text
+                font-size: 24px
+                max-width: 250px
+                span
+                    font-size: 28px
+        &-block
+            &__size
+                margin: 35px 0 57px 10px
+    .hero
+        &-sides
+            &__title
+                max-width: 350px
+                margin-bottom: -5px
+    .about-company
+        padding: 74px 0   
+        &__title
+            font-size: 28px
+            margin-left: 10px
+            margin-bottom: 32px
+        &-sides
+            &__left
+                margin-left: 10px
+            &__text 
+                p
+                    line-height: 24px
+            &__assessment
+                margin-top: -19px
+                margin-bottom: -15px
+            &__block
+                &:first-child
+                    &::after
+                        bottom: -24px
+                        right: -24px
     .wiget-phone
         bottom: 27%      
 @media (max-width: 740px)
+    .footer 
+        .container
+            flex-direction: column
+        &-col
+            &__item
+                margin-bottom: 20px
+                &:nth-child(1),
+                &:nth-child(3),
+                &:nth-child(5)
+                    margin-left: 0
+                &:nth-child(4),
+                &:nth-child(5)
+                    position: static
+        &__address
+            max-width: 100%
+            margin-left: 0
+    .call-appraiser
+        &__button
+            display: block
+            max-width: 315px
+            height: 90px
+            margin: 210px auto 0
+            span
+                font-size: 20px
+        &-side
+            &__right
+                display: none
+            &__message
+                max-width: 260px
+                margin: 0 auto
+        &__relative
+            &::before
+                top: auto
+                bottom: 180px
+                right: auto
+                left: 50%
+                transform: translateX(-50%)
+    .message
+        &__out
+            top: auto
+            left: 50%
+            transform: translateX(-50%)
+    .activities
+        &-slide
+            &r
+                &__size
+                    max-width: 250px
+        &-arrow
+            &__next
+                right: -80px
+            &__prev
+                left: -75px
     .question
         &-side
             &__image
@@ -546,7 +943,7 @@
             position: absolute
             top: 28px
             right: 120px                 
-@media (max-width: 700px)  
+@media (max-width: 700px) 
     .question
         padding: 62px 0 0
         &__button
@@ -561,6 +958,19 @@
                 display: none
             &__image
                 position: static
+@media (max-width: 620px) 
+    .about-company
+        padding: 74px 0 140px
+        &-sides
+            &__arrow
+                &-prev,
+                &-next
+                    top: auto
+                    bottom: -115px 
+                &-prev
+                    left: 10%
+                &-next
+                    right: 10%
 @media (max-width: 510px)  
     .header
         &-search
@@ -646,12 +1056,80 @@
             &__button
                 margin: 35px auto 0         
 @media (max-width: 430px)
+    .activities
+        &__title,
+        &__subtitle
+            margin-left: 0
+        &__subtitle
+            font-size: 18px
+        &-arrow
+            &__next,
+            &__prev
+                top: auto
+                bottom: -100px
+            &__next
+                right: 10%
+            &__prev
+                left: 10%
+    .call-appraiser
+        &-side
+            &__left
+                margin-left: 0
+            &__title
+                span
+                    font-size: 18px
+    .causes
+        &-wrap
+            &__number
+                font-size: 100px
+            &__text
+                font-size: 18px
+                span
+                    font-size: 22px
+    .hero
+        &-sides
+            &__title
+                max-width: 270px
+                line-height: 30px
+    .about-company
+        &__title
+            margin-left: 0
+        &-sides
+            &__arrow
+                &-prev
+                    left: 15%
+                &-next
+                    right: 15%
+            &__text 
+                p
+                    font-size: 14px
+            &__left
+                margin-left: 0
+            &__block
+                width: 164px
+                height: 124px
+            &__slide
+                max-width: 350px
     .title
         font-size: 22px
     .offer
         &__subtitle
             font-size: 20px
 @media (max-width: 400px)
+    .causes
+        &-wrap
+            &__number
+                margin: -3px 18px 0 0
+        &-block
+            &__title
+                font-size: 15px
+                max-width: 140px
+            &__text
+                font-size: 14px
+                max-width: 170px
+            &s
+                &__size
+                    max-width: 290px
     .offer
         &-block
             &__item
@@ -687,6 +1165,52 @@
             &__subtitle
                 margin: 0 0 0 50px
 @media (max-width: 360px)
+    .causes
+        &-wrap
+            &__text
+                margin-top: 6px
+            &__size
+                margin-bottom: 10px
+        &-block
+            &__size
+                margin: 35px 0 35px 8px
+        &__bg
+            min-height: 640px
+    .about-company
+        padding: 49px 0 103px
+        &__title
+            margin-bottom: 19px
+        &-sides
+            &__text 
+                p
+                    line-height: 21px
+            &__assessment
+                font-size: 14px
+                margin-top: -26px
+                margin-bottom: 0
+                img
+                    width: 80px
+                    height: 80px
+                    position: relative
+                    top: 6px
+            &__link
+                font-size: 15px
+            &__arrow
+                &-next,
+                &-prev
+                    bottom: -103px
+                &-next
+                    right: 34%
+                &-prev
+                    left: 28%
+            &__image
+                max-width: 76%
+            &__right
+                margin-top: 45px
+            &__slide
+                max-width: 340px
+            &__block
+                width: 160px
     .question
         padding: 100px 0 0
         &__subtitle
@@ -747,8 +1271,10 @@
         &-sides
             &__title
                 padding-top: 20px
-            p
-                max-width: 300px
+                margin-bottom: 0
+                font-size: 32px
+                max-width: 317px
+                line-height: 37px
             &__somewhere
                 margin: 9px 0 18px
             &__item
@@ -787,6 +1313,25 @@
                 &-address
                     font-size: 15px
 @media (max-width: 355px)
+    .causes
+        &-wrap
+            &__text
+                max-width: 170px
+                font-size: 16px
+                span
+                    font-size: 20px
+    .about-company
+        &-sides
+            &__block
+                width: 140px
+                height: 115px
+            &__slide
+                max-width: 300px
+            &__arrow
+                &-next
+                    right: 27%
+                &-left
+                    left: 27%
     .hero
         &-sides
             &__item
@@ -822,6 +1367,14 @@
                 font-size: 28px
             p
                 max-width: 270px
+@media (max-width: 330px) 
+    .about-company
+        &-sides
+            &__block
+                width: 120px
+                height: 100px
+            &__slide
+                max-width: 260px
 @media (max-width: 320px) 
     .offer
         &-block
