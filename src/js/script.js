@@ -147,5 +147,34 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 			}
 		  ]
 	});
+
+	//feedbacks slider
+	$('.feedback-slider__slides').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		adaptiveHeight: false,
+		prevArrow: $('.feedback-slider__arrow-prev'),
+		nextArrow: $('.feedback-slider__arrow-next'),
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					adaptiveHeight: true
+				}
+			}
+		]
+	});
+
+	// оптимизация карты
+	$(".map-show").one('mouseover', function () {
+		var map = $(this).attr("data-map");
+		var map_width = $(window).width();
+		var map_height = $(this).attr("data-map-height");
+		$(this).css("height", map_height);
+		$(this).html(`<iframe src="${map}" width="${map_width}" style="border:0" allowfullscreen></iframe>`);
+	});
  
 });

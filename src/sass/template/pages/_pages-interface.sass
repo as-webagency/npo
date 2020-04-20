@@ -1,0 +1,93 @@
+.hidden
+  display: none
+.visible
+  display: inline-block
+.pages-container
+  width: 97%
+  max-width: 1207px
+  margin: 0 auto 
+.hero-pages
+  min-height: 390px
+  padding: 28px 0
+.pages-section
+  padding: 85px 0 150px
+.breadcrumbs
+  font-size: 14px
+.kama_breadcrumbs
+  color: $text
+  span
+    a
+      color: $textHover
+.kb_title
+  margin-left: 5px
+.title
+  &-pages
+    margin: 0
+    font-size: 44px
+    font-weight: 500
+    color: $textHover
+    &--reg
+      font-weight: 400
+      display: inline-block
+  &-descr
+    font-size: 30px
+.subtitle
+  font-size: 30px
+  font-weight: 500
+  margin: 0
+  &--primary
+    color: $textHover
+.wrap
+  display: flex
+  justify-content: start
+  align-items: start
+.col
+  max-width: 46%
+  &--50
+    max-width: 50%
+.text
+  margin: 0
+  font-size: 20px
+  font-weight: 400
+  &--bold
+    font-weight: 500
+.list
+  list-style: none
+  padding-left: 0
+  font-size: 20px 
+  &__item
+    position: relative
+    margin-bottom: 16px
+    padding-left: 25px
+    &::before
+      position: absolute
+      left: 0
+      top: 2px
+      content: "\f046"
+      font-family: FontAwesome
+      color: $textHover
+      margin-right: 10px
+      width: 17px
+      height: 15px
+  &--order
+    counter-reset:  item
+    .list__item
+      color: $text
+      &::before
+        content: counter(item) ') ' 
+        counter-increment: item 
+        color: $text
+        font-family: Rubik
+        font-size: 20px
+        font-weight: 500
+      &--md
+        font-weight: 500
+      a
+        color: $text
+
+.read-more
+  display: inline-block
+  color: $textHover
+  font-size: 20px
+  font-weight: 400
+  border-bottom: 1px dotted #2e94ed
