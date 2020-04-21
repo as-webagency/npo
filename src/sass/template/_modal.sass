@@ -172,3 +172,163 @@
         height: 92px
         span
             font-size: 22px
+.modal-reviews
+    display: none
+    padding: 10px
+    &__size
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        background-color: $light
+        z-index: 80
+        max-width: 460px
+        width: 100%
+        border-radius: 4px 0 4px 4px
+    &__close
+        position: absolute
+        top: 0
+        right: -62px
+        background-color: #fdf1e0
+        width: 62px
+        height: 58px
+        border-radius: 0 4px 4px 0
+        border: none
+        +flex-content-center
+        &-times
+            width: 27px
+            height: 27px
+            path
+                fill: $orangeHover
+    &__inner
+        padding: 47px 70px 47px 50px
+        border: 1px dotted rgba(100, 192, 251, 0.549)
+    &__group
+        margin-bottom: 30px
+        &:nth-child(1)
+            margin-bottom: 30px
+            .modal
+                &__label
+                    margin-bottom: 14px
+            .label
+                &__relative
+                    &::before
+                        top: 0
+                        left: 0
+                        background: url(../img/form/phone.png) center no-repeat
+                        width: 16px
+                        height: 18px
+        &:nth-child(2)
+            margin-bottom: 40px
+            .modal
+                &__label
+                    margin-bottom: 12px
+            .label
+                &__relative
+                    &::before
+                        top: 0
+                        left: 0
+                        background: url(../img/form/position.png) center no-repeat
+                        width: 16px
+                        height: 14px
+        &:nth-child(3)
+            margin-bottom: 23px
+            .label
+                &__relative
+                    &::before
+                        top: 0
+                        left: 0
+                        background: url(../img/form/messages.png) center no-repeat
+                        width: 18px
+                        height: 15px
+        &:nth-child(4)
+            margin-bottom: 23px
+            .label
+                &__relative
+                    &::before
+                        top: 0
+                        left: -25px
+                        background: url(../img/form/file.png) center no-repeat
+                        width: 15px
+                        height: 17px
+            .modal-reviews
+                &__label
+                    font-size: 18px
+                    color: $textHover
+                    margin-bottom: 12px
+                    cursor: pointer
+                    display: inline-block
+                    padding-left: 0
+                    margin-left: 25px
+                    border-bottom: 1px dotted $textHover
+            .modal-reviews__input,
+            .call-appraiser-block__input 
+                opacity: 0
+                visibility: hidden
+                width: 0
+                height: 0
+                overflow: hidden
+        &:nth-child(6)
+            .policy
+                &__relative
+                    &::before
+                        top: -4px
+                        left: 4px
+                        background: url(../img/form/policy.png) center no-repeat
+                        width: 12px
+                        height: 18px
+    &__label
+        padding-left: 25px
+        margin-bottom: 25px
+    &__input
+        padding: 0 5px
+        height: 40px
+    &__button
+        max-width: 315px
+        height: 92px
+        span
+            font-size: 22px
+    &__title
+        font-size: 30px
+        margin-bottom: 35px
+.modal-thanks
+    display: none
+    padding: 10px
+    &__size
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        background-color: $light
+        z-index: 80
+        max-width: 460px
+        width: 100%
+        border-radius: 4px 0 4px 4px
+    &__close
+        position: absolute
+        top: 0
+        right: -62px
+        background-color: #fdf1e0
+        width: 62px
+        height: 58px
+        border-radius: 0 4px 4px 0
+        border: none
+        +flex-content-center
+        &-times
+            width: 27px
+            height: 27px
+            path
+                fill: $orangeHover
+    &__inner
+        padding: 47px 30px 47px
+        border: 1px dotted rgba(100, 192, 251, 0.549)
+    &__image
+        width: 192px
+        height: 192px
+        margin: 0 auto
+    &__title
+        font-size: 30px
+        margin: 25px 0
+    &__text
+        font-size: 22px
+        color: $text

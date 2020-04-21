@@ -839,6 +839,9 @@
                 margin-bottom: 35px
             &:nth-child(4) 
                 margin-bottom: 20px
+        &-reviews
+            &__title
+                font-size: 24px
     .activities
         padding: 70px 0 100px
         &__title
@@ -989,6 +992,14 @@
             &__image
                 position: static
 @media (max-width: 620px) 
+    .modal
+        &-thanks
+            &__size
+                max-width: 400px
+            &__close
+                top: 3px
+                right: 3px
+                background-color: transparent
     .about-company
         padding: 74px 0 140px
         &-sides
@@ -1001,6 +1012,13 @@
                     left: 10%
                 &-next
                     right: 10%
+@media (max-width: 590px) 
+    .modal
+        &-reviews
+            &__close
+                top: 3px
+                right: 3px
+                background-color: transparent
 @media (max-width: 560px) 
     .modal
         &__size
@@ -1035,7 +1053,16 @@
             background-size: cover   
     .wiget-phone
         bottom: 14%              
+@media (max-width: 480px)
+    .modal
+        &-reviews
+            &__size
+                max-width: 95%
 @media (max-width: 450px)
+    .modal
+        &-reviews
+            &__inner
+                padding: 40px 30px 47px
     #arrow-top
         right: 5%
     .question
@@ -1102,6 +1129,12 @@
             &__button
                 margin: 35px auto 0         
 @media (max-width: 430px)
+    .modal
+        &-thanks
+            &__text
+                font-size: 18px
+            &__size
+                max-width: 95%
     .activities
         &__title,
         &__subtitle
@@ -1216,7 +1249,32 @@
                     height: 40px
             &__subtitle
                 margin: 0 0 0 50px
+@media (max-width: 375px)
+    .modal
+        &-thanks
+            &__inner
+                padding: 40px 15px
+            &__title
+                font-size: 18px
+            &__text
+                font-size: 16px
+        &-reviews
+            &__button 
+                height: 70px
+                span
+                    font-size: 18px
+            &__input
+                font-size: 18px
+            &__label
+                margin-bottom: 10px
+            &__group
+                &:last-child
+                    margin-bottom: 0
 @media (max-width: 360px)
+    .modal
+        &-reviews
+            &__inner
+                padding: 40px 15px
     #arrow-top
         bottom: 20px
         width: 50px

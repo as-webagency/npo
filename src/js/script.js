@@ -231,8 +231,18 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 	});	
  
 	// Call-appraiser__button  
-	$('.call-appraiser__button ').click(function () {
+	$('.call-appraiser__button').click(function () {
 		$('.mask, .modal').fadeIn();	
 	});	
+
+	// Feedback__button - Open 
+	$('.feedback__button').click(function () {
+		$('.mask, .modal-reviews').fadeIn();	
+	});	
+
+	// Feedback__button - Close
+	$('.mask, .modal-reviews__close').click(function () {
+		$('.mask, .modal-reviews').fadeOut();
+	});
  
 });

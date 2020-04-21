@@ -405,7 +405,55 @@
                 </div>
             </form>
         </div>
-    </div>
+	</div>
+	
+	<div class="modal-reviews modal-reviews__size">
+        <button class="modal-reviews__close">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-reviews__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+        </button>
+        <div class="modal-reviews__inner">
+            <div class="title modal-reviews__title title--primary">Оставьте свой отзыв</div>
+            <form class="form modal-reviews__form">
+                <div class="modal-reviews__group">
+                    <label for="label-tel" class="label label__relative modal-reviews__label label--primary">Введите свой номер *</label>
+                    <input type="tel" id="label-tel" name="user_phone" class="input modal-reviews__input input--primary" placeholder="+7 (911) 000-00-00">
+                </div>
+                <div class="modal-reviews__group">
+                    <label for="label-position" class="label label__relative modal-reviews__label label--primary">Введите свою должность</label>
+                    <input type="text" id="label-position" name="user_position" class="input modal-reviews__input input--primary" placeholder="Ваша должность">
+                </div>
+                <div class="modal-reviews__group">
+                    <label for="label-text" class="label label__relative modal-reviews__label label--primary">Введите текст отзыва *</label>
+                    <input type="text" id="label-text" name="user_text" class="input modal-reviews__input input--primary" placeholder="Ваш отзыв">
+                </div>
+                <div class="modal-reviews__group">
+                    <label for="user-file-modal" class="label label__relative modal-reviews__label label--primary">Прикрепить документ</label>
+                    <input type="file" id="user-file-modal" name="user_file" class="input modal-reviews__input input--primary">
+                </div>
+                <div class="modal-reviews__group">
+                    <button class="button modal-reviews__button button--primary"><span>Оставить отзыв</span></button>
+                </div>
+                <div class="modal-reviews__group">
+                    <label class="policy policy__relative modal-reviews__policy policy--primary">Нажимая на кнопку, вы принимаете условия обработки <a href="#" target="_blank" class="policy__link">персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+	</div>
+	
+	<div class="modal-thanks modal-thanks__size">
+		<button class="modal-thanks__close">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-thanks__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+        </button>
+        <div class="modal-thanks__inner">
+			<div class="modal-thanks__image">
+				<img src="./img/thanks.png" alt="thanks">
+			</div>
+			<div class="title modal-thanks__title title--primary">Мы ценим Ваше мнение!</div>
+			<p class="modal-thanks__text">Спасибо, что нашли время 
+				и поделились впечатлениями 
+				о работе с нами! </p>
+		</div>
+	</div>
 
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/script.js"></script>
