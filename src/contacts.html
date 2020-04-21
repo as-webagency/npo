@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,8 +9,10 @@
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+	<a id="arrow-top" href="#">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="arrow-top" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+    </a>
 	<header class="header header__relative">
 		<div class="container">
 			<div class="header__content">
@@ -254,8 +255,56 @@
 		</button>
 	</div>
 
+	<div class="mask mask__size"></div>
+    <div class="modal modal__size">
+        <button class="modal__close">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+        </button>
+        <div class="modal__inner">
+            <form class="form modal__form">
+                <div class="modal__group">
+                    <label for="label-name" class="label label__relative modal__label label--primary">Введите свое имя</label>
+                    <input type="text" id="label-name" name="user_name" class="input modal__input input--primary" placeholder="Ваше имя">
+                </div>
+                <div class="modal__group">
+                    <label for="label-tel" class="label label__relative modal__label label--primary">Введите свой номер *</label>
+                    <input type="tel" id="label-tel" name="user_phone" class="input modal__input input--primary" placeholder="+7 (911) 000-00-00">
+                </div>
+                <div class="modal__group">
+                    <button class="button modal__button button--primary"><span>Оставить заявку</span></button>
+                </div>
+                <div class="modal__group">
+                    <label class="policy policy__relative modal__policy policy--primary">Нажимая на кнопку, вы принимаете условия обработки <a href="#" target="_blank" class="policy__link">персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-consultation modal-consultation__size">
+        <button class="modal-consultation__close">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-consultation__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+        </button>
+        <div class="modal-consultation__inner">
+            <form class="form modal-consultation__form">
+                <div class="modal-consultation__group">
+                    <label for="label-tel" class="label label__relative modal-consultation__label label--primary">Введите свой номер *</label>
+                    <input type="tel" id="label-tel" name="user_phone" class="input modal-consultation__input input--primary" placeholder="+7 (911) 000-00-00">
+                </div>
+                <div class="modal-consultation__group">
+                    <label for="label-email" class="label label__relative modal-consultation__label label--primary">Введите адрес почты</label>
+                    <input type="email" id="label-email" name="user_email" class="input modal-consultation__input input--primary" placeholder="info@npo-spb.ru">
+                </div>
+                <div class="modal-consultation__group">
+                    <button class="button modal-consultation__button button--primary"><span>Консультация</span></button>
+                </div>
+                <div class="modal-consultation__group">
+                    <label class="policy policy__relative modal-consultation__policy policy--primary">Нажимая на кнопку, вы принимаете условия обработки <a href="#" target="_blank" class="policy__link">персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
-
 </html>

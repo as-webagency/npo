@@ -176,5 +176,63 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 		$(this).css("height", map_height);
 		$(this).html(`<iframe src="${map}" width="${map_width}" style="border:0" allowfullscreen></iframe>`);
 	});
+
+	// Scroll Top Arrow
+	var top_show = 300; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+	var delay = 2000; // Задержка прокрутки
+	$(document).ready(function() {
+	  $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+		/* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+		if ($(this).scrollTop() > top_show) $('#arrow-top').fadeIn();
+		else $('#arrow-top').fadeOut();
+	  });
+	  $('#arrow-top').click(function (e) { // При клике по кнопке "Наверх" попадаем в эту функцию
+	  	e.preventDefault();
+		/* Плавная прокрутка наверх */
+		$('body, html').animate({
+		  scrollTop: 0
+		}, delay);
+	  });
+	});
+
+	// Modal Callback - Open
+	$('.header__button').click(function () {
+		$('.mask, .modal').fadeIn();	
+	});
+
+	// // Modal Callback - Close
+	$('.mask, .modal__close').click(function () {
+		$('.mask, .modal').fadeOut();
+	});
+ 
+	// Modal Consultation - Open
+	$('.hero-sides__button').click(function () {
+		$('.mask, .modal-consultation').fadeIn();	
+	});
+
+	// Modal Consultation - Close
+	$('.mask, .modal-consultation__close').click(function () {
+		$('.mask, .modal-consultation').fadeOut();
+	});
+ 
+	// Wiget-phone
+	$('.wiget-phone__button').click(function () {
+		$('.mask, .modal').fadeIn();	
+	});
+
+	// Wiget-phone
+	$('.offer-block__bottom-button').click(function () {
+		$('.mask, .modal').fadeIn();	
+	});	
+
+	// Question__button 
+	$('.question__button').click(function () {
+		$('.mask, .modal').fadeIn();	
+	});	
+ 
+	// Call-appraiser__button  
+	$('.call-appraiser__button ').click(function () {
+		$('.mask, .modal').fadeIn();	
+	});	
  
 });

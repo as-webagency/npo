@@ -237,6 +237,13 @@
                     margin-right: 0
                     margin-left: 10px
 @media (max-width: 1024px)
+    #arrow-top
+        right: 3%
+        bottom: 0
+    .modal
+        &__input,
+        &__button
+            font-size: 20px
     .footer
         &__info,
         &__link
@@ -550,6 +557,10 @@
         .container
             padding: 0
         &__shadow
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
             z-index: 5
             margin-top: 80px
         &-list
@@ -813,6 +824,21 @@
             top: -470px
             right: 60px  
 @media (max-width: 768px) 
+    .modal
+        &__size
+            max-width: 420px
+        &__inner
+            padding: 47px 38px 47px 38px
+        &__group
+            &:nth-child(1) 
+                margin-bottom: 24px
+                .modal
+                    &__label
+                        margin-bottom: 10px
+            &:nth-child(2) 
+                margin-bottom: 35px
+            &:nth-child(4) 
+                margin-bottom: 20px
     .activities
         padding: 70px 0 100px
         &__title
@@ -975,6 +1001,20 @@
                     left: 10%
                 &-next
                     right: 10%
+@media (max-width: 560px) 
+    .modal
+        &__size
+            max-width: 97%
+        &__close
+            top: 3px
+            right: 3px
+            background-color: transparent 
+        &__button
+            height: 70px
+            max-width: 238px
+            margin: 0 auto
+        &__inner
+            padding: 40px 30px 47px 30px
 @media (max-width: 510px)  
     .header
         &-search
@@ -996,6 +1036,8 @@
     .wiget-phone
         bottom: 14%              
 @media (max-width: 450px)
+    #arrow-top
+        right: 5%
     .question
         &__title,
         &__subtitle
@@ -1120,6 +1162,12 @@
         &__subtitle
             font-size: 20px
 @media (max-width: 400px)
+    .modal
+        &__inner
+            padding: 40px 20px 47px 20px
+        &__button
+            span
+                font-size: 18px
     .causes
         &-wrap
             &__number
@@ -1169,6 +1217,13 @@
             &__subtitle
                 margin: 0 0 0 50px
 @media (max-width: 360px)
+    #arrow-top
+        bottom: 20px
+        width: 50px
+        height: 50px
+    .modal
+        &__size
+            max-width: 95%
     .footer
         &__link
             bottom: -22px
