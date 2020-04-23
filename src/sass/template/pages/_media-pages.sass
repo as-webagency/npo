@@ -3,18 +3,17 @@
     width: 94%
   .hero-pages
     min-height: 320px
+    &__title
+      margin-top: 60px
+      &-descr
+        margin-top: 5px
   .pages-section
     padding: 65px 0 125px 0
   .title
     &-pages
       font-size: 38px
     &-descr
-      font-size: 26px
-  .about    
-    &__title
-      margin-top: 60px
-      &-descr
-        margin-top: 5px
+      font-size: 26px  
   .subtitle
     font-size: 26px
   .col
@@ -46,10 +45,7 @@
       &-descr
         max-width: 170px
         margin-top: 0
-
-  .partners
-    &__title
-      margin-top: 60px
+  
   .partnership
     &__subtitle
       font-size: 30px    
@@ -64,9 +60,7 @@
   
   .vacancies
     &__hero
-      background: $light url('../img/pages-bg/vacancy-bg-min.png') no-repeat bottom/cover
-    &__title
-      margin-top: 60px    
+      background: $light url('../img/pages-bg/vacancy-bg-min.png') no-repeat bottom/cover     
   .vacancy
     &__col
       margin-left: 0
@@ -85,8 +79,7 @@
   .delivary
     &__hero
       background: $light url('../img/pages-bg/delivary-bg-min.png') no-repeat center/cover
-    &__title
-      margin-top: 60px
+ 
   .terms
     &__list
       &-title
@@ -102,8 +95,7 @@
   .feedbacks
     &__hero
       background: $light url('../img/pages-bg/feedbacks-bg-md.png') no-repeat center/cover
-    &__title
-      margin-top: 60px
+
   .feedback
     padding: 35px 0 125px 0
   
@@ -120,6 +112,10 @@
       &-icon
         min-width: 24px
 
+@media (max-width: 1023px)
+  .main
+    &__size
+      margin-top: 80px
 @media (max-width: 991px)
   .pages-container
     width: 92%
@@ -166,7 +162,6 @@
   .vacancies    
     &__title
       max-width: 200px
-      margin-top: 60px    
   .vacancy
     &__col
       padding-left: 0
@@ -230,6 +225,9 @@
 
   
 @media (max-width: 510px)
+  .main
+    &__size
+      margin-top: 60px
   .xs-hidden
     display: none
   .xs-visible
@@ -237,11 +235,19 @@
   .pages-container
     width: 92%
   .hero-pages
+    position: relative
     min-height: 236px
+    padding: 25px 0
+    &__title
+      margin-top: 25px
+      &-descr
+        margin-top: 5px
   .breadcrumbs
     font-size: 12px 
+    position: absolute
+    bottom: -30px
   .pages-section
-    padding: 18px 0 70px 0
+    padding: 30px 0 70px 0
   .title
     &-pages
       font-size: 22px
@@ -275,10 +281,6 @@
   .about
     &__hero
       background: $light url('../img/pages-bg/about-bg.png') no-repeat center/cover
-    &__title
-      margin-top: 25px
-      &-descr
-        margin-top: 5px
   .warranty
     &__subtitle
       max-width: 195px
@@ -292,12 +294,13 @@
       left: 0 
     &__numbers     
       font-size: 13px     
-    &__number
-      margin-bottom: 15px
+    &__number  
+      margin-bottom: 12px    
       &-blue        
         font-size: 53px
         min-width: 170px
         margin-right: 18px
+        margin-top: -16px
       &-descr
         max-width: 110px
         margin-top: 0   
@@ -308,7 +311,6 @@
       background: $light url('../img/pages-bg/partner-bg-min.png') no-repeat center/cover
     &__title      
       max-width: 200px
-      margin-top: 25px
   .partnership
     &__subtitle
       max-width: 200px
@@ -317,10 +319,7 @@
     &__text
       font-size: 13px
       margin-top: 12px
-
-  .vacancies    
-    &__title
-      margin-top: 25px    
+  
   .vacancy
     &__subtitle
       margin-top: 30px
@@ -344,7 +343,6 @@
       background: $light url('../img/pages-bg/delivary-bg-min360.png') no-repeat center/cover
     &__title
       max-width: 260px
-      margin-top: 25px
   .terms
     &__list
       &-title
@@ -362,7 +360,6 @@
     &__hero
       background: $light url('../img/pages-bg/feedbacks-bg-min.png') no-repeat center/cover
     &__title
-      margin-top: 25px
       max-width: 100px
   .feedback
     padding: 18px 0 70px 0

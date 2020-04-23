@@ -246,3 +246,28 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 	});
  
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+	const tabs = document.querySelectorAll(".propertyval__tabs-item");
+  
+	tabs.forEach((tab) => {
+	  tab.addEventListener("click", () => {
+		for (let item of tabs) {
+		  item.classList.remove("active-tab");
+		}
+		tab.classList.add("active-tab");
+		if (tab.id === "first") {
+		  document.getElementById("firstSection").style.display = "block";
+		  document.getElementById("secondSection").style.display = "block";
+		  document.getElementById("thirdSection").style.display = "block";
+		  document.getElementById("fourthSection").style.display = "none";
+		} else {
+		  document.getElementById("firstSection").style.display = "none";
+		  document.getElementById("secondSection").style.display = "none";
+		  document.getElementById("thirdSection").style.display = "none";
+		  document.getElementById("fourthSection").style.display = "block";
+		}
+	  });
+	});
+  });
+  

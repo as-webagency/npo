@@ -1,0 +1,135 @@
+.catalog
+  padding-top: 90px
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid rgba($text, 0.15)
+    padding-bottom: 5px
+    &-item
+      color: $text
+      font-size: 18px
+      font-weight: 500
+      &--primary, &--counter
+        color: $textHover
+        font-size: 16px
+        font-weight: 400
+  &__container
+    max-width: 1235px
+  &-slider   
+    margin-left: 16px
+    &__slide
+      padding-right: 7px
+    &__card
+      position: relative
+      width: 100%
+      max-width: 400px
+      height: 300px
+      box-shadow: 0 0 35px rgba(71, 101, 135, 0.05)
+      border-radius: 5px
+      background-color: #ffffff
+      perspective: 1000px  
+      margin-bottom: 7px    
+      &-front, &-back        
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        transition: 1s
+        backface-visibility: hidden
+        padding: 35px 0 0 31px
+      &-front
+        &--1
+          background: $light url('../img/consulting/catalog/catalog-card-bg1.png') no-repeat center/cover
+        &--2
+          background: $light url('../img/consulting/catalog/catalog-card-bg2.png') no-repeat center/cover
+        &--3
+          background: $light url('../img/consulting/catalog/catalog-card-bg3.png') no-repeat center/cover
+        &--4
+          background: $light url('../img/consulting/catalog/catalog-card-bg4.png') no-repeat center/cover
+        &--5
+          background: $light url('../img/consulting/catalog/catalog-card-bg5.png') no-repeat center/cover
+        &--6
+          background: $light url('../img/consulting/catalog/catalog-card-bg6.png') no-repeat center/cover
+        &-title
+          color: $text
+          font-size: 16px
+          font-weight: 500
+          margin-bottom: 10px
+        &-counter, &-count
+          color: $textHover
+          font-size: 13px
+          font-weight: 400
+          line-height: 12px
+        &-counter
+          display: inline-block
+          padding: 8px 11px
+          height: 28px
+          border-radius: 14px
+          border: 1px solid rgba($textHover, 0.4)
+          background: $light
+      &-back
+        transform: rotateY(-180deg)
+        display: flex
+        flex-direction: column
+        &-list
+          list-style: none
+          padding: 0
+          margin: 0       
+          &-item
+            position: relative
+            padding-left: 10px
+            &::before
+              position: absolute
+              left: 0
+              top: 5px
+              content: "\f0da"
+              font-family: FontAwesome
+              color: $text
+              margin-right: 10px
+              width: 17px
+              height: 15px
+            &:hover
+              &::before
+                color: $textHover
+        &-title
+          color: $textHover
+          font-size: 16px
+          font-weight: 500
+          margin-bottom: 10px
+          transition: 0.3s
+          &-icon
+            position: absolute
+            bottom: 20px
+            right: 20px         
+          &::before
+            content: ' '
+            position: absolute
+            left: 0
+            top: 30px
+            display: block
+            width: 3px
+            height: 25px
+            background: $light linear-gradient(5deg, #64c0fb 0%, #1e97e0 100%)
+          &:hover
+            color: $orangeHover
+            &::before
+              background: $orangeHover
+        &-item
+          color: $text
+          font-size: 16px
+          font-weight: 400
+          line-height: 30px
+          &:hover
+            color: $textHover
+      &-triangle
+        margin-right: 4px
+      &:hover
+        .catalog-slider__card-front
+          transform: rotateY(-180deg)          
+        .catalog-slider__card-back
+          transform: rotateY(-360deg)
+ 
+
+      

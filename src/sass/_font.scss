@@ -259,6 +259,19 @@
 }
 
 @font-face {
+    font-family: "Myriad Pro Reg";
+    font-display: swap;
+    src: url("../fonts/MyriadPro-Regular.eot");
+    src: local("Myriad Pro Regular"), local("MyriadPro-Regular"),
+      url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
+      url("../fonts/MyriadPro-Regular.woff") format("woff"),
+      url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
     font-family: 'Roboto';
     font-display: swap;
     src: url('../fonts/Roboto-Medium.eot');

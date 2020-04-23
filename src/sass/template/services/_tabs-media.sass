@@ -1,0 +1,154 @@
+@media (max-width: 1024px)
+  .tabs   
+    // шапка с вкладками
+    &__header    
+      &-item      
+        font-size: 18px
+        padding: 20px 0     
+    &__wrap
+      flex-direction: column
+    &__col
+      max-width: 86%
+    &__text
+      font-size: 18px
+      margin-bottom: 28px
+    &__list
+      margin-bottom: 35px
+      &-title
+        margin-bottom: 20px
+        margin-top: 10px
+  .special-offer
+    margin-bottom: 70px
+    &__col     
+      width: 55%
+    &__img     
+    &__title
+      font-size: 26px
+      line-height: 24px
+      &--reg
+        font-size: 20px
+    &__text
+      max-width: 386px
+      font-size: 16px
+      line-height: 22px
+      padding-left: 14px
+      margin-top: 10px
+  .tabs
+    &__question
+      padding: 0
+      &-block
+        &-size
+          top: 8px
+          margin-right: 0
+      &-title
+        font-size: 26px
+        margin-bottom: 32px
+      &-subtitle
+        font-size: 18px
+        margin: 0
+        max-width: 410px
+        margin-bottom: 27px
+  .prices    
+    &__table
+      margin-top: 25px
+      th
+        font-size: 18px
+        padding: 15px 0 15px 60px
+        &:nth-of-type(2)
+          width: 246px        
+      td
+        font-size: 18px
+        padding: 18px 0 18px 60px
+      tr      
+        &:nth-of-type(2n+2)
+          td
+            padding: 15px 0 15px 60px
+  .documents
+    &__title
+      margin-top: 0
+  .category-list
+    margin-top: 30px
+    &__item
+      margin-bottom: 30px    
+    &__dropdown
+      padding: 40px 50px
+      font-size: 20px     
+      &::after       
+        right: 50px        
+    &-document 
+      flex-direction: column 
+      align-items: start  
+      padding-top: 65px    
+      &__item
+        width: 100%
+        margin-bottom: 60px
+        font-size: 18px
+        max-width: 100%
+        &:last-of-type
+          margin-bottom: 74px
+
+@media (max-width: 1020px)
+  .tabs
+    &__question
+      &-title
+        max-width: 500px
+      &-subtitle
+        max-width: 100%
+      &-side
+        flex-direction: column
+        align-items: center
+        &-left
+          max-width: 100%
+
+@media (max-width: 991px)
+  .tabs   
+    &__header  
+      margin-top: 5px
+      overflow-x: scroll
+      overflow-y: hidden
+      white-space: nowrap 
+      &-item   
+        min-width: 235px   
+        padding: 17px 0     
+    &__wrap
+      flex-direction: column
+    &__col
+      max-width: 90%
+    &__text
+      line-height: 23px
+      margin-bottom: 23px
+    &__list
+      margin-bottom: 35px
+      &-title
+        margin-top: 4px  
+      &-item
+        margin-bottom: 13px
+        max-width: 635px
+  .special-offer
+    margin: 81px 0 102px
+    background-color: #fafcfe
+    &__wrap
+      flex-direction: column
+      align-items: center    
+    &__img
+      display: none
+    &__title
+      color: $textHover
+      font-size: 30px
+      font-weight: 500
+      max-width: 290px
+      &--reg
+        font-size: 22px
+        font-weight: 400
+    &__text
+      max-width: 535px
+      color: $text
+      font-size: 18px
+      font-weight: 400
+      line-height: 24px
+      &--medium
+        font-weight: 500
+      &--primary
+        color: $textHover
+    
+        
