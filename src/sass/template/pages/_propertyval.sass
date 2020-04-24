@@ -2,11 +2,12 @@
     .breadcrumbs
         margin-left: 20px
     &__container 
-        max-width: 1260px;
-        padding: 0 15px;
-        margin: 0 auto;
+        max-width: 1260px
+        padding: 0 15px
+        margin: 0 auto
     &__hero
         background: $light url('../img/propertyval/propertyval-bg.jpg') no-repeat center/cover
+        background-position: 65% 0%;
     &__title
         margin-top: 85px
         margin-left: 10px
@@ -119,10 +120,12 @@
         padding-bottom: 160px
         &-box 
             display: flex
-            justify-content: center
+            justify-content: space-between
             align-items: flex-start
         &-item 
             flex-basis: 50%
+            .question-block__size
+                top: auto
             &__title
                 color: $blueText
                 font-size: 32px
@@ -177,9 +180,7 @@
                             left: -25px
                             top: 0
             &:nth-child(2)
-                display: flex
-                justify-content: flex-end
-                align-items: flex-start
+                max-width: 460px
             &__arrow
                 z-index: 2
             &__wrap
@@ -515,6 +516,10 @@
                     padding-right: 90px 
 @media (max-width: 660px)
     .propertyval
+        .question-block
+            &__size
+                &::before
+                    display: none
         &__specialOffer
             &-item
                 & img 
@@ -572,7 +577,7 @@
                 &:nth-child(2)
                     &  p:nth-child(1)
                         padding-right: 30px
-                        font-size: 18px
+                        font-size: 18px                    
 @media (max-width: 430px)
     .propertyval
         &__tabs
@@ -611,6 +616,16 @@
 
 @media (max-width: 360px)
     .propertyval
+        .question-block
+            &__button 
+                height: 65px
+                & span
+                    font-size: 18px
+            & input 
+                &::placeholder 
+                    font-size: 16px
+            &__inner  
+                padding: 30px 45px 30px 45px  
         .title-pages
             font-size: 26px
         &__container

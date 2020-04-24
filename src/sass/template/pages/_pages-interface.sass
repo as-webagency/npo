@@ -9,8 +9,14 @@
 .hero-pages
   min-height: 390px
   padding: 28px 0
+  &__title
+    margin: 0
+    margin-top: 90px
+    max-width: 420px
+    &-descr
+      margin-top: 15px
 .pages-section
-  padding: 85px 0 150px
+  padding: 85px 0 154px
 .breadcrumbs
   font-size: 14px
 .kama_breadcrumbs
@@ -20,9 +26,11 @@
       color: $textHover
 .kb_title
   margin-left: 5px
+.back
+  font-size: 13px
+  color: $textHover
 .title
   &-pages
-    margin: 0
     font-size: 44px
     font-weight: 500
     color: $textHover
@@ -55,6 +63,8 @@
   list-style: none
   padding-left: 0
   font-size: 20px 
+  &--secondary
+    color: $text
   &__item
     position: relative
     margin-bottom: 16px
@@ -84,6 +94,8 @@
         font-weight: 500
       a
         color: $text
+  &--maw
+    max-width: 90%
 
 .read-more
   display: inline-block

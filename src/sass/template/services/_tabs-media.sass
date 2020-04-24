@@ -1,3 +1,25 @@
+// медиа запросы для внутренних страниц услуг с табами
+@media (max-width: 1170px)
+  .tabs
+    &__question
+      padding: 0
+      &-block
+        &-size
+          top: 8px
+          margin-right: 0
+          max-width: 420px
+          min-width: auto
+      &-title
+        font-size: 26px
+        margin-bottom: 32px
+        &--mb
+          margin-bottom: 2px
+      &-subtitle
+        font-size: 18px
+        margin: 0
+        max-width: 410px
+        margin-bottom: 27px
+        
 @media (max-width: 1024px)
   .tabs   
     // шапка с вкладками
@@ -32,22 +54,7 @@
       font-size: 16px
       line-height: 22px
       padding-left: 14px
-      margin-top: 10px
-  .tabs
-    &__question
-      padding: 0
-      &-block
-        &-size
-          top: 8px
-          margin-right: 0
-      &-title
-        font-size: 26px
-        margin-bottom: 32px
-      &-subtitle
-        font-size: 18px
-        margin: 0
-        max-width: 410px
-        margin-bottom: 27px
+      margin-top: 10px  
   .prices    
     &__table
       margin-top: 25px
@@ -55,7 +62,9 @@
         font-size: 18px
         padding: 15px 0 15px 60px
         &:nth-of-type(2)
-          width: 246px        
+          width: 210px  
+        &.second
+          width: 245px        
       td
         font-size: 18px
         padding: 18px 0 18px 60px
@@ -83,9 +92,13 @@
         width: 100%
         margin-bottom: 60px
         font-size: 18px
-        max-width: 100%
         &:last-of-type
           margin-bottom: 74px
+        &-text
+          max-width: 100%
+  .audit
+    &__title
+      max-width: 100px
 
 @media (max-width: 1020px)
   .tabs
@@ -102,6 +115,7 @@
 
 @media (max-width: 991px)
   .tabs   
+    padding-bottom: 200px
     &__header  
       margin-top: 5px
       overflow-x: scroll
@@ -124,31 +138,269 @@
       &-item
         margin-bottom: 13px
         max-width: 635px
+    &__question  
+      margin-top: 36px
+      &-side
+        align-items: center
+        &-left
+          width: 100%
+          max-width: 100%
+        &-right
+          margin-top: 0
+      &-block
+        &-size
+          top: 8px
+      &-title
+        font-size: 24px
+        margin-bottom: 25px
+      &-subtitle
+        font-size: 18px
+        margin-bottom: 27px 
+        max-width: 96%  
+        
   .special-offer
-    margin: 81px 0 102px
-    background-color: #fafcfe
+    position: relative
+    margin: 91px 0 62px
     &__wrap
       flex-direction: column
-      align-items: center    
+      align-items: flex-end
+    &__col
+      margin-right: 74px    
     &__img
-      display: none
+      position: absolute
+      bottom: 0
+      left: -6px
+      img
+        width: 111%
+        max-width: 111%
     &__title
-      color: $textHover
-      font-size: 30px
-      font-weight: 500
-      max-width: 290px
+      font-size: 24px
+      max-width: 255px
       &--reg
-        font-size: 22px
-        font-weight: 400
+        font-size: 20px
     &__text
-      max-width: 535px
-      color: $text
+      font-size: 16px
+      padding-left: 0
+      margin-bottom: 40px
+  .prices
+    &__title
+      margin-top: 0
+    &__table
+      margin-top: 29px
+      th
+        padding: 15px 0 15px 40px
+        &:nth-of-type(2)
+          width: 155px  
+        &.second
+          width: 210px 
+      td
+        font-size: 18px
+        padding: 18px 0 18px 40px
+      tr      
+        &:nth-of-type(2n+2)
+          td
+            padding: 14px 0 12px 40px
+  .category-list
+    margin-top: 40px
+  .liquidation-OOO
+    &__question
+      margin-top: 12px
+      &-title
+        margin-bottom: 15px
+  .registration-OOO
+    &__list
+      &-item
+        max-width: 100%
+        margin-bottom: 22px
+
+@media (max-width: 700px)
+  .special-offer
+    margin: 91px 0 62px
+    &__wrap
+      align-items: flex-start
+    &__col
+      width: 100%
+      margin-right: 0   
+    &__img
+      bottom: 0
+      left: auto
+      right: 0      
+      max-width: 180px
+      img
+        width: 100%
+    &__title
+      font-size: 24px
+      max-width: 255px
+      &--reg
+        font-size: 20px
+    &__text
+      font-size: 16px
+      padding-left: 0
+      margin-bottom: 40px
+  .tabs
+    &__question
+      &-side
+        &-right
+          display: block
+
+@media (max-width: 576px)
+  .tabs
+    padding-bottom: 78px
+    &__breadcrumbs
+      bottom: -45px
+      &--bottom
+        bottom: -32px
+    &__header  
+      margin-top: 29px   
+      margin-bottom: 30px 
+      &-item   
+        min-width: 164px   
+        padding: 13px 0   
+        font-size: 13px 
+    &__col
+      max-width: 99%
+    &__description
+      &-title
+        max-width: 76%
+        margin-bottom: 20px  
+    &__text
+      line-height: 16px
+      margin-bottom: 16px
+      font-size: 13px
+    &__list
+      margin-bottom: 19px
+      &-title
+        margin-top: 0  
+        margin-bottom: -5px
+      &-item
+        margin-bottom: 9px
+        max-width: 635px
+    &__question 
+      &-block
+        &-size
+          &::before
+            display: none
+        &-inner
+          padding: 35px 35px 37px 37px
+        &-group
+          margin-bottom: 12px
+          &:nth-of-type(2)
+            margin-bottom: 27px            
+        &-input
+          padding: 0
+          font-size: 18px
+        &-button
+          height: 70px
+          span
+            font-size: 18px
+      &-label
+        font-size: 15px
+        margin-bottom: 7px
+
+      &-title
+        font-size: 18px
+        &--mb
+          margin-bottom: 2px
+      &-subtitle
+        font-size: 13px
+        margin-bottom: 16px 
+        &--size
+          font-size: 15px
+  .special-offer
+    margin: 72px 0 48px
+    &__wrap
+      align-items: flex-start
+    &__col
+      width: 75%
+      margin-right: 0
+      padding-left: 25px   
+    &__img
+      bottom: 0
+      left: auto
+      right: -10px      
+      max-width: 100px
+      img
+        width: 100%
+    &__title
       font-size: 18px
-      font-weight: 400
-      line-height: 24px
-      &--medium
-        font-weight: 500
-      &--primary
-        color: $textHover
+      max-width: 160px
+      line-height: 18px
+      &--reg
+        font-size: 13px
+    &__text
+      font-size: 12px
+      padding-left: 0
+      margin-bottom: 33px
+      max-width: 220px
+      line-height: 14px
+  .prices
+    &__title
+      margin-top: 0
+    &__table
+      margin-top: 24px
+      th
+        font-size: 12px
+        padding: 12px 0 12px 17px
+        &:nth-of-type(2)
+          width: 70px 
+          padding-left: 24px      
+        &.second
+          width: 100px
+      td
+        font-size: 12px
+        padding: 12px 0 12px 17px
+      tr      
+        &:nth-of-type(2n+2)
+          td
+            padding: 11px 0 10px 17px
+            max-width: 100px
+  .category
+    &-list
+      margin-top: 24px
+      &__dropdown
+        padding: 22px 20px
+        font-size: 13px
+        &::after
+          right: 20px
+          font-size: 22px
+      &__item
+        margin-bottom: 13px
+      &-document    
+        padding-top: 35px       
+        &__item
+          margin-bottom: 32px
+          padding-left: 38px
+          font-size: 13px
+          max-width: 359px
+          &--mb24
+            margin-bottom: 24px
+          &:last-of-type
+            margin-bottom: 45px
+          &::before           
+            top: 50%
+            transform: translateY(-50%)
+            left: 0           
+            font-size: 30px
+  .changing__title 
+    max-width: 225px
+  .liquidation, .registration
+    &-OOO
+      &__title
+        max-width: 200px
+  .registration-OOO
+    &__list
+      margin-bottom: 30px
+      &-item
+        margin-bottom: 9px
+  .report
+    &__title
+      max-width: 330px
+    &__tabs
+      padding-top: 62px
+
+ 
+
+        
+
     
         

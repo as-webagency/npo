@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,10 +10,11 @@
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 	<a id="arrow-top" href="#">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="arrow-top" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
-    </a>
+		<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="arrow-top" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+	</a>
 	<header class="header header__relative">
 		<div class="container">
 			<div class="header__content">
@@ -162,39 +164,26 @@
 			</div>
 		</div>
 	</nav>
-	<main class="feedbacks">
+	<main class="main main__size feedbacks">
 		<section class="hero-pages feedbacks__hero">
 			<div class="pages-container">
+				<a href="index.html" class="back xs-visible hidden">&lt; Назад</a>
 				<div class="breadcrumbs">
 					<div class="kama_breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
 						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="index.html" itemprop="item" class="xs-hidden ">
+							<a href="index.html" itemprop="item" >
 								<span itemprop="name">Главная</span>
-							</a>
-							<a href="index.html" itemprop="item" class="xs-visible hidden">
-								<span itemprop="name">&lt; Назад</span>
-							</a>
-						</span>
-						<span class="kb_sep xs-hidden"> > </span>
-						<span class="kb_title xs-hidden">Отзывы</span>
-					</div>
-				</div>
-				<h1 class="title-pages feedbacks__title">Отзывы<span class="title-pages title-pages--reg">клиентов</span></h1>
-			</div>
-		</section>
-		<div class="feedback feedbacks__feedback">
-			<div class="pages-container feedback__container">
-				<div class="breadcrumbs feedback__breadcrumbs hidden xs-visible">
-					<div class="kama_breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="index.html" itemprop="item">
-								<span itemprop="name">Главная</span>
-							</a>						
+							</a>					
 						</span>
 						<span class="kb_sep"> > </span>
 						<span class="kb_title">Отзывы</span>
 					</div>
 				</div>
+				<h1 class="title-pages hero-pages__title feedbacks__title">Отзывы<span class="title-pages title-pages--reg">клиентов</span></h1>
+			</div>
+		</section>
+		<div class="feedback feedbacks__feedback">
+			<div class="pages-container feedback__container">
 				<div class="feedback-slider">
 					<div class="feedback-slider__slides">
 						<div class="feedback-slider__slide">
@@ -405,9 +394,9 @@
                 </div>
             </form>
         </div>
-	</div>
-	
-	<div class="modal-reviews modal-reviews__size">
+    </div>
+
+    <div class="modal-reviews modal-reviews__size">
         <button class="modal-reviews__close">
             <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-reviews__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
         </button>
@@ -438,9 +427,9 @@
                 </div>
             </form>
         </div>
-	</div>
-	
-	<div class="modal-thanks modal-thanks__size">
+    </div>
+
+    <div class="modal-thanks modal-thanks__size">
 		<button class="modal-thanks__close">
             <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-thanks__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
         </button>

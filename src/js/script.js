@@ -244,6 +244,161 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 	$('.mask, .modal-reviews__close').click(function () {
 		$('.mask, .modal-reviews').fadeOut();
 	});
+
+	// табы на внутренних страницах услуг
+	window.addEventListener('DOMContentLoaded', function() {
+		'use strict';	
+		// табы
+		let tab = document.querySelectorAll('.tabs__header-item'),
+				info = document.querySelector('.tabs__header'),
+				tabContent = document.querySelectorAll('.tabs__content');
+	
+		// функция скрывания элементов
+		function hideTabContent(a) {
+			for (let i = a; i < tabContent.length; i++) {
+				tabContent[i].classList.remove('show');
+				tabContent[i].classList.add('hide');
+			}
+		}
+		// скрываем все элементы, кроме первого
+		hideTabContent(1);	
+		// показать элементы
+		function showTabContent(b) {
+			if (tabContent[b].classList.contains('hide')) {
+				tabContent[b].classList.remove('hide');
+				tabContent[b].classList.add('show');
+			}
+		}	
+		// при клике делаем переключение контента
+		info.addEventListener('click', function(event) {
+			let target = event.target;
+			for (let i = 0; i < tab.length; i++) {
+				tab[i].classList.remove('tabs__header-item--active');
+			}
+			// проверяем, что то, на что мы кликнули вообще есть и имеет нужный нам класс
+			if (target && target.classList.contains('tabs__header-item')) {
+				for (let i = 0; i < tab.length; i++) {
+					// находим таб,на который мы кликнули и скрываем все элементы контента, а показываем только с нужным индексом.
+					if (target == tab[i]) {
+						tab[i].classList.add('tabs__header-item--active');
+						hideTabContent(0);
+						showTabContent(i);
+						break;
+					}
+				}
+			}
+		});
+	});
+	
+	// аккордеон с документами в табах услуг
+	$(function() {
+		var Accordion = function(el, multiple) {
+			this.el = el || {};
+			// more then one submenu open?
+			this.multiple = multiple || false;    
+			var dropdownlink = this.el.find('.category-list__dropdown');
+			dropdownlink.on('click',
+							{ el: this.el, multiple: this.multiple },
+							this.dropdown);
+		};
+		
+		Accordion.prototype.dropdown = function(e) {
+			var $el = e.data.el,
+				$this = $(this),
+				//this is the ul.submenuItems
+				$next = $this.next();
+			
+			$next.toggleClass('category-list-document-show');
+			$this.parent().toggleClass('category-list__item-open');
+			
+			if(!e.data.multiple) {
+			//show only one menu at the same time
+					$el.find('.category-list-document').not($next).removeClass('category-list-document-show').parent().removeClass('category-list__item-open');
+			}
+		}
+		
+		var accordion = new Accordion($('.category-list'), false);
+	})
+
+	// слайдер с консалтинговыми услугами на главной странице 
+	$('.consulting__catalog-slides').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 3,
+		arrows: false,
+		rows: 2,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					dots: true,
+					speed: 300,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					slidesPerRow: 2,
+					arrows: false,
+					rows: 2,
+				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					dots: true,
+					speed: 300,
+					slidesToShow: 1,
+					arrows: false,
+					rows: 3,
+				}
+			}
+		]
+	});
+	
+	// слайдер с оценочными услугами на главной странице
+	$('.valuation__catalog-slides').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 3,
+		arrows: false,
+		rows: 3,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					dots: true,
+					speed: 300,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					slidesPerRow: 3,
+					arrows: false,
+					rows: 2,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					dots: true,
+					speed: 300,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					slidesPerRow: 2,
+					arrows: false,
+					rows: 2,
+				}
+			},
+			{
+				breakpoint: 577,
+				settings: {
+					dots: true,
+					speed: 300,
+					slidesToShow: 1,
+					arrows: false,
+					rows: 3,
+				}
+			}
+		]
+	});
  
 });
 
@@ -269,5 +424,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	  });
 	});
-  });
+
+});
   

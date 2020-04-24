@@ -242,8 +242,8 @@
       </div>
     </nav>
 
-    <main class="propertyval main__size">
-      <section class="hero-pages about__hero">
+    <main class="main main__size propertyval">
+      <section class="hero-pages propertyval__hero">
         <div class="pages-container">
           <a href="index.html" class="back xs-visible hidden">&lt; Назад</a>
           <div class="breadcrumbs">
@@ -275,10 +275,9 @@
               <span class="kb_title">Оценка жилой недвижимости</span>
             </div>
           </div>
-          <h1 class="title-pages hero-pages__title about__title">О компании</h1>
-          <div class="title-descr hero-pages__title-descr about__title-descr">
-            Цифры и факты
-          </div>
+          <h1 class="title-pages hero-pages__title about__title">
+            Оценка жилой недвижимости
+          </h1>
         </div>
       </section>
       <section class="propertyval__tabs">
@@ -394,45 +393,53 @@
               </ul>
             </div>
             <div class="propertyval__form-item">
-              <div class="propertyval__form-item__arrow">
-                <img src="img\propertyval\arrow.png" alt="arrow" />
-              </div>
-              <div class="propertyval__form-item__wrap">
-                <div class="propertyval__form-item__block">
-                  <form class="form propertyval__form-item__form">
-                    <label for="name">
-                      <img src="img\form\name.png" alt="name" />
-                      <span>Введите свое имя</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="Ваше имя"
-                      required
-                    />
-                    <label for="tel">
-                      <img src="img\form\phone.png" alt="phone" />
-                      <span>Введите свой номер *</span>
-                    </label>
-                    <input
-                      type="tel"
-                      id="tel"
-                      placeholder="+7 (911) 000-00-00"
-                      required
-                    />
-                    <button
-                      type="submit"
-                      class="button button--primary propertyval__form-item__form-button"
-                    >
-                      <span>Оставить заявку</span>
-                    </button>
-                    <p>
-                      <img src="img\form\policy.png" alt="policy" />
-                      <span
-                        >Нажимая на кнопку, вы принимаете условия обработки
-                        <span>персональных данных</span></span
+              <div class="question-block question-block__size">
+                <div class="question-block__inner">
+                  <form class="form question-block__form">
+                    <div class="question-block__group">
+                      <label
+                        for="user-name"
+                        class="label label__relative question-block__label label--primary"
+                        >Введите свое имя</label
                       >
-                    </p>
+                      <input
+                        type="text"
+                        name="user_name"
+                        class="input question-block__input input--primary"
+                        id="user-name"
+                        placeholder="Ваше имя"
+                      />
+                    </div>
+                    <div class="question-block__group">
+                      <label
+                        for="user-name"
+                        class="label label__relative question-block__label label--primary"
+                        >Введите свой номер *</label
+                      >
+                      <input
+                        type="tel"
+                        name="user_phone"
+                        class="input question-block__input input--primary"
+                        id="user-name"
+                        placeholder="+7 (911) 000-00-00"
+                      />
+                    </div>
+                    <div class="question-block__group">
+                      <button
+                        class="button question-block__button button--primary"
+                      >
+                        <span>Оставить заявку</span>
+                      </button>
+                    </div>
+                    <div class="question-block__group">
+                      <label
+                        class="policy policy__relative question-block__policy policy--primary"
+                        >Нажимая на кнопку, вы принимаете условия обработки
+                        <a href="#" target="_blank" class="policy__link"
+                          >персональных данных</a
+                        ></label
+                      >
+                    </div>
                   </form>
                 </div>
               </div>
@@ -624,6 +631,5 @@
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/sanyaScript.js"></script>
   </body>
 </html>

@@ -13,8 +13,8 @@
 
 <body>
 	<a id="arrow-top" href="#">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="arrow-top" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
-    </a>
+		<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="arrow-top" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+	</a>
 	<header class="header header__relative">
 		<div class="container">
 			<div class="header__content">
@@ -164,39 +164,26 @@
 			</div>
 		</div>
 	</nav>
-	<main class="partners">
+	<main class="main main__size partners">
 		<section class="hero-pages partners__hero">
 			<div class="pages-container">
+				<a href="index.html" class="back xs-visible hidden">&lt; Назад</a>
 				<div class="breadcrumbs">
 					<div class="kama_breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
 						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="index.html" itemprop="item" class="xs-hidden ">
-								<span itemprop="name">Главная</span>
-							</a>
-							<a href="index.html" itemprop="item" class="xs-visible hidden">
-								<span itemprop="name">&lt; Назад</span>
-							</a>
-						</span>
-						<span class="kb_sep xs-hidden"> > </span>
-						<span class="kb_title xs-hidden">Партнерам</span>
-					</div>
-				</div>
-				<h1 class="title-pages partners__title">Нашим будущим партнерам</h1>
-			</div>
-		</section>
-		<section class="pages-section partnership partners__partnership">
-			<div class="pages-container">
-				<div class="breadcrumbs hidden xs-visible">
-					<div class="kama_breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="index.html" itemprop="item">
+							<a href="index.html" itemprop="item" >
 								<span itemprop="name">Главная</span>
 							</a>						
 						</span>
 						<span class="kb_sep"> > </span>
-						<span class="kb_title">Партнeрам</span>
+						<span class="kb_title">Партнерам</span>
 					</div>
 				</div>
+				<h1 class="title-pages hero-pages__title partners__title">Нашим будущим партнерам</h1>
+			</div>
+		</section>
+		<section class="pages-section partnership partners__partnership">
+			<div class="pages-container">			
 				<h2 class="subtitle partnership__subtitle subtitle--primary">Приглашаем к&nbsp;сотрудничеству</h2>
 				<div class="wrap partnership__wrap">						
 					<ul class="list partnership__list">
@@ -279,6 +266,54 @@
             </form>
         </div>
     </div>
+
+    <div class="modal-reviews modal-reviews__size">
+        <button class="modal-reviews__close">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-reviews__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+        </button>
+        <div class="modal-reviews__inner">
+            <div class="title modal-reviews__title title--primary">Оставьте свой отзыв</div>
+            <form class="form modal-reviews__form">
+                <div class="modal-reviews__group">
+                    <label for="label-tel" class="label label__relative modal-reviews__label label--primary">Введите свой номер *</label>
+                    <input type="tel" id="label-tel" name="user_phone" class="input modal-reviews__input input--primary" placeholder="+7 (911) 000-00-00">
+                </div>
+                <div class="modal-reviews__group">
+                    <label for="label-position" class="label label__relative modal-reviews__label label--primary">Введите свою должность</label>
+                    <input type="text" id="label-position" name="user_position" class="input modal-reviews__input input--primary" placeholder="Ваша должность">
+                </div>
+                <div class="modal-reviews__group">
+                    <label for="label-text" class="label label__relative modal-reviews__label label--primary">Введите текст отзыва *</label>
+                    <input type="text" id="label-text" name="user_text" class="input modal-reviews__input input--primary" placeholder="Ваш отзыв">
+                </div>
+                <div class="modal-reviews__group">
+                    <label for="user-file-modal" class="label label__relative modal-reviews__label label--primary">Прикрепить документ</label>
+                    <input type="file" id="user-file-modal" name="user_file" class="input modal-reviews__input input--primary">
+                </div>
+                <div class="modal-reviews__group">
+                    <button class="button modal-reviews__button button--primary"><span>Оставить отзыв</span></button>
+                </div>
+                <div class="modal-reviews__group">
+                    <label class="policy policy__relative modal-reviews__policy policy--primary">Нажимая на кнопку, вы принимаете условия обработки <a href="#" target="_blank" class="policy__link">персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-thanks modal-thanks__size">
+		<button class="modal-thanks__close">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="modal-thanks__close-times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+        </button>
+        <div class="modal-thanks__inner">
+			<div class="modal-thanks__image">
+				<img src="./img/thanks.png" alt="thanks">
+			</div>
+			<div class="title modal-thanks__title title--primary">Мы ценим Ваше мнение!</div>
+			<p class="modal-thanks__text">Спасибо, что нашли время 
+				и поделились впечатлениями 
+				о работе с нами! </p>
+		</div>
+	</div>
 
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/script.js"></script>
