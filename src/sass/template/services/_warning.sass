@@ -1,0 +1,40 @@
+.warning
+  position: relative
+  margin-top: 68px
+  box-shadow: 0 0 35px rgba(71, 101, 135, 0.05)
+  background: $light 
+  padding: 27px 0
+  &-bg
+    position: absolute
+    right: 50px
+    bottom: -34px
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-around
+  &__title
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 35% 
+  &-descr
+    width: 43% 
+  &__text
+    display: inline-block
+    max-width: 455px
+    color: $text
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    &--medium
+      font-weight: 500
+    &--primary
+      color: $textHover
+    &--ml
+      margin-left: 20px
+    &--unlim
+      max-width: 100%
+    &--limit
+      max-width: 300px
+    &--bigger
+      font-size: 20px

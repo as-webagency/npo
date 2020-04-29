@@ -19,8 +19,11 @@
         margin: 0
         max-width: 410px
         margin-bottom: 27px
+ 
         
 @media (max-width: 1024px)
+  .xl-hidden
+    display: none
   .tabs   
     // шапка с вкладками
     &__header    
@@ -41,6 +44,8 @@
         margin-top: 10px
   .special-offer
     margin-bottom: 70px
+    &--margin
+      margin-top: 56px
     &__col     
       width: 55%
     &__img     
@@ -55,23 +60,41 @@
       line-height: 22px
       padding-left: 14px
       margin-top: 10px  
+  .valuation
+    .special-offer      
+      &__col     
+        width: 49%         
+      &__text
+        max-width: 430px  
+        padding-left: 0
+      &__subtitle      
+        display: block
+        max-width: 300px 
+        font-size: 18px
   .prices    
     &__table
       margin-top: 25px
       th
         font-size: 18px
-        padding: 15px 0 15px 60px
-        &:nth-of-type(2)
-          width: 210px  
-        &.second
-          width: 245px        
+        padding: 15px 0           
       td
         font-size: 18px
-        padding: 18px 0 18px 60px
+        padding: 18px 0
       tr      
         &:nth-of-type(2n+2)
           td
-            padding: 15px 0 15px 60px
+            padding-top: 15px
+            padding-bottom: 15px
+      &--four
+        th, td
+          &:first-of-type
+            width: 41%
+            padding-left: 4%
+      &--w56
+        th, td
+          &:first-of-type
+            width: 57%
+ 
   .documents
     &__title
       margin-top: 0
@@ -99,6 +122,31 @@
   .audit
     &__title
       max-width: 100px
+  .apartment
+    &__table
+      th, td
+        &:first-of-type
+          width: 58%
+  .warning
+    margin-top: 25px
+    padding: 37px 0
+    &-bg
+      position: absolute
+      right: 50px
+      bottom: -34px  
+    &__title   
+      width: 38% 
+    &-descr
+      width: 43% 
+    &__text
+      max-width: 340px
+      font-size: 16px
+      &--ml
+        margin-left: 28px     
+      &--bigger
+        font-size: 18px
+    
+  
 
 @media (max-width: 1020px)
   .tabs
@@ -127,7 +175,7 @@
     &__wrap
       flex-direction: column
     &__col
-      max-width: 90%
+      max-width: 90%    
     &__text
       line-height: 23px
       margin-bottom: 23px
@@ -182,26 +230,66 @@
       font-size: 16px
       padding-left: 0
       margin-bottom: 40px
+  .valuation
+    .special-offer
+      &__col     
+        justify-content: start
+        width: 55%
+        &--tac
+          justify-content: start  
+      &__text
+        margin-bottom: 0
+      &__title
+        margin-top: 40px
+      &__subtitle      
+        display: block
+        max-width: 300px
+      &__img
+        position: absolute
+        bottom: 50%
+        transform: translateY(50%)
+        left: 37px 
+      &__descr
+        margin-bottom: 30px
   .prices
     &__title
       margin-top: 0
     &__table
       margin-top: 29px
       th
-        padding: 15px 0 15px 40px
-        &:nth-of-type(2)
-          width: 155px  
-        &.second
-          width: 210px 
+        padding: 15px 0      
       td
         font-size: 18px
-        padding: 18px 0 18px 40px
+        padding: 18px 0 
       tr      
         &:nth-of-type(2n+2)
           td
-            padding: 14px 0 12px 40px
+            padding-top: 14px
+            padding-bottom: 12px
+      th, td
+        &:first-of-type
+          width: 65%     
+      &--three
+        th, td
+          &:first-of-type
+            width: 45%
+      &--four
+        th, td
+          width: 14%
+          &:first-of-type
+            width: 28%
+      &--w56
+        th, td
+          width: 14%
+          &:first-of-type
+            width: 41%
+ 
+        
   .category-list
     margin-top: 40px
+  .valuation
+    &__hero
+      background: $light url('../img/valuation/main-bg-md.png') no-repeat center/cover
   .liquidation-OOO
     &__question
       margin-top: 12px
@@ -212,6 +300,24 @@
       &-item
         max-width: 100%
         margin-bottom: 22px
+  .apartment
+    &__table
+      th, td
+        width: 15%
+        &:first-of-type
+          width: 40%
+        &:last-of-type
+          padding-right: 30px
+  .warning
+    margin-top: 66px
+    &-bg
+      right: 8px
+    &__img
+      min-width: 70px
+      img
+        width: 100%
+    &__title
+      width: 42%
 
 @media (max-width: 700px)
   .special-offer
@@ -237,13 +343,23 @@
       font-size: 16px
       padding-left: 0
       margin-bottom: 40px
+  .valuation
+    .special-offer      
+      &__img
+        position: absolute
+        bottom: 50%
+        transform: translateY(50%)
+        left: auto
+        right: 0
+      &__descr
+        margin-bottom: 30px
   .tabs
     &__question
       &-side
         &-right
           display: block
 
-@media (max-width: 576px)
+@media (max-width: 576px) 
   .tabs
     padding-bottom: 78px
     &__breadcrumbs
@@ -262,13 +378,17 @@
     &__description
       &-title
         max-width: 76%
-        margin-bottom: 20px  
+        margin-bottom: 20px       
+        &--limit
+          max-width: 83%
     &__text
       line-height: 16px
       margin-bottom: 16px
       font-size: 13px
     &__list
       margin-bottom: 19px
+      &--mb
+        margin-bottom: -17px
       &-title
         margin-top: 0  
         margin-bottom: -5px
@@ -308,6 +428,8 @@
           font-size: 15px
   .special-offer
     margin: 72px 0 48px
+    &--margin
+      margin: 22px 0 54px 
     &__wrap
       align-items: flex-start
     &__col
@@ -333,6 +455,22 @@
       margin-bottom: 33px
       max-width: 220px
       line-height: 14px
+  .valuation
+    .special-offer      
+      &__img
+        position: absolute
+        bottom: 72%
+        left: auto
+        right: -31px
+        img
+          width: 80%
+      &__col
+        width: 90%
+      &__descr
+        margin-bottom: 30px
+      &__subtitle
+        font-size: 13px
+        max-width: 220px
   .prices
     &__title
       margin-top: 0
@@ -340,20 +478,43 @@
       margin-top: 24px
       th
         font-size: 12px
-        padding: 12px 0 12px 17px
-        &:nth-of-type(2)
-          width: 70px 
-          padding-left: 24px      
-        &.second
-          width: 100px
+        padding: 12px 0     
       td
         font-size: 12px
-        padding: 12px 0 12px 17px
+        padding: 12px 0
       tr      
         &:nth-of-type(2n+2)
           td
-            padding: 11px 0 10px 17px
-            max-width: 100px
+            padding-top: 11px
+            padding-bottom: 10px
+      &-descr
+        font-size: 12px
+        margin-bottom: 20px
+        &--m0
+          margin: 0
+        &--mt28
+          margin-top: 28px
+      th, td
+        &:first-of-type
+          width: 65%    
+        &:last-of-type
+          padding-right: 10px 
+      &--three
+        th, td
+          width: 15%
+          &:first-of-type
+            width: 45%
+      &--four
+        th, td
+          width: 14%
+          &:first-of-type
+            width: 28%
+      &--w56
+        th, td
+          width: 14%
+          &:first-of-type
+            width: 41%
+  
   .category
     &-list
       margin-top: 24px
@@ -381,8 +542,34 @@
             transform: translateY(-50%)
             left: 0           
             font-size: 30px
-  .changing__title 
-    max-width: 225px
+  .warning
+    margin-top: 21px
+    &__wrap
+      flex-direction: column
+      align-items: start
+    &-bg
+      bottom: -24px    
+    &__img
+      min-width: 50px
+      img
+        width: 100%
+    &__title, &-descr
+      width: 85%
+    &-descr
+      margin-left: 24px
+      margin-top: 10px
+    &__text
+      max-width: 455px
+      font-size: 12px
+      line-height: 14px    
+      &--bigger
+        font-size: 13px
+  .valuation
+    &__hero
+      background: $light url('../img/valuation/main-bg-min.png') no-repeat bottom/cover
+  .changing, .apartment
+    &__title 
+      max-width: 225px
   .liquidation, .registration
     &-OOO
       &__title
@@ -397,6 +584,16 @@
       max-width: 330px
     &__tabs
       padding-top: 62px
+  .outsourcing
+    &__title
+      &--reg
+        max-width: 150px
+  .judge
+    &__title
+      max-width: 230px
+  .subtitle
+    &--maw50
+      max-width: 90%
 
  
 

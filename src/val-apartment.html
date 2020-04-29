@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Регистрация ООО</title>
+	<title>Оценка стоимости квартиры</title>
 	<link rel="shortcut icon" href="./favicon/favicon.svg">
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/style.css">
@@ -169,11 +169,11 @@
 			</div>
 		</div>
 	</nav>
-	<main class="main main__size registration-OOO">
-		<section class="hero-pages consulting__hero registration-OOO__hero">
+	<main class="main main__size apartment">
+		<section class="hero-pages valuation__hero apartment__hero">
 			<div class="pages-container">
 				<a href="consulting.html" class="back xs-visible hidden">&lt; Назад</a>
-				<div class="breadcrumbs tabs__breadcrumbs tabs__breadcrumbs--bottom">
+				<div class="breadcrumbs tabs__breadcrumbs">
 					<div class="kama_breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
 						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 							<a href="index.html" itemprop="item">
@@ -182,24 +182,29 @@
 						</span>
 						<span class="kb_sep"> > </span>
 						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-							<a href="consulting.html" itemprop="item">
-								<span itemprop="name">Консалтинговые услуги</span>
+							<a href="valuation.html" itemprop="item">
+								<span itemprop="name">Оценочные услуги</span>
 							</a>
 						</span>
 						<span class="kb_sep"> > </span>
-						<span class="kb_title">Регистрация ООО</span>
+						<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="#" itemprop="item">
+								<span itemprop="name">Оценка жилой недвижимости</span>
+							</a>
+						</span>
+						<span class="kb_sep"> > </span>
+						<span class="kb_title">Оценка квартиры</span>
 					</div>
 				</div>
-				<h1 class="title-pages hero-pages__title registration-OOO__title">Регистрация ООО
-					<span class="title-pages title-pages--reg">под ключ </span></h1>
+				<h1 class="title-pages hero-pages__title apartment__title">Оценка стоимости квартиры</h1>
 			</div>
 		</section>
 
-		<div class="pages-section tabs registration-OOO__tabs">
+		<div class="pages-section tabs apartment__tabs">
 			<div class="pages-container tabs__container">			
 				<ul class="tabs__header">
 					<li class="tabs__header-item tabs__header-item--active">Описание</li>
-					<li class="tabs__header-item">Плюсы ООО</li>
+					<li class="tabs__header-item">Содержание отчета</li>
 					<li class="tabs__header-item">Стоимость и сроки</li>
 					<li class="tabs__header-item">Список документов</li>
 				</ul>
@@ -207,58 +212,74 @@
 				<div class="tabs__content tabs__content-description fade">
 					<!-- текст с описанием -->
 					<div class="description tabs__description tabs__wrap">
-						<div class="tabs__col">						
-							<p class="tabs__text">Регистрация фирмы обязательна для постановки на учет 
-								в налоговом органе.<span class="medium">Почему важно доверить регистрацию фирмы экспертам, а не решать данный вопрос самому?</span></p>
-								<ol class="list list--order registration-OOO__list">
-									<li class="list__item registration-OOO__list-item">Неверно установленный минимальный капитал может привести к ошибкам на старте бизнеса и негативно сказаться на репутации в будущем.</li>
-									<li class="list__item registration-OOO__list-item">Уставы ООО можно самостоятельно найти в интернете, 
-										но они вряд ли подойдут под вашу ситуацию. Отсюда возникнут дополнительные траты на повторную регистрацию. </li>
-									<li class="list__item registration-OOO__list-item">Часто приходиться получать отказ из-за незначительных ошибок в документах, потом заново их заполнять (минимум 2-3 раза) и терять свое время.</li>
-								</ol>	
-							<p class="tabs__text medium">«Независимая профессиональная оценка» в 2019 году предлагает услугу оформления ООО под ключ.
-							</p>							
+						<div class="tabs__col">
+							<p class="tabs__text">Услуга по оценке рыночной стоимости квартиры пользуется особой популярностью, поскольку самостоятельно довольно сложно  определить стоимость недвижимости.</p>
+								<div class="tabs__text medium tabs__list-title">В каких случаях нужна оценка стоимости квартиры:</div>
+								<ul class="list tabs__list list--secondary">
+									<li class="list__item tabs__list-item">при осуществлении сделки купли-продажи;</li>
+									<li class="list__item tabs__list-item">	при оформлении кредита с недвижимостью в качестве залога;</li>
+									<li class="list__item tabs__list-item">при оформлении наследства или договора о дарении имущества (для нотариуса);</li>
+									<li class="list__item tabs__list-item">в судебных делах, связанных с недвижимостью;</li>
+									<li class="list__item tabs__list-item">при взаимодействии со страховыми агентствами;</li>
+									<li class="list__item tabs__list-item">	при заключении брачного контракта и другие операции 
+										с недвижимостью.</li>
+								</ul>					
 						</div>
 						<div class="tabs__col">
-							<div class="tabs__text medium tabs__list-title">Что входит в стоимость услуги?</div>
-							<ul class="list tabs__list list--secondary">
-								<li class="list__item tabs__list-item">расширенное консультирование (+ подбор кодов ОКВЭД);</li>
-								<li class="list__item tabs__list-item">госпошлина, подготовка всей документации и при необходимости заявление о переходе на УСН;
-								</li>
-								<li class="list__item tabs__list-item">помощь в открытии счета в банке;</li>
-								<li class="list__item tabs__list-item">коды статистики;</li>
-								<li class="list__item tabs__list-item">уведомление в ПФР;</li>
-								<li class="list__item tabs__list-item">передача/получение документов из ИФНС;</li>
-								<li class="list__item tabs__list-item primary medium">печать в подарок!</li>
-							</ul>
-							<p class="tabs__text"><span class="medium">При заказе услуги у нас вы получаете:  
-								</span>ОГРН и ИНН, прошитый устав, решение об учреждении ООО, приказ 
-								о назначении гендиректора, арендный договор 
-								(при приобретении юр. адреса через нас).
-							</p>
+							<div class="tabs__text medium tabs__list-title">Почему к нам обращаются:</div>
+								<ol class="list list--order">
+									<li class="list__item tabs__list-item">Компания «Независимая профессиональная оценка» аккредитована ведущими банками РФ.</li>
+									<li class="list__item tabs__list-item">Оценщики — аккредитованные специалисты, 
+										состоящие в СРО Ассоциация оценщиков «СПО».</li>
+									<li class="list__item tabs__list-item">Специалисты приезжают в удобное для вас время.</li>
+									<li class="list__item tabs__list-item">Выполняем оценку квартиры в течение 1-3 дней.</li>							
+									<li class="list__item tabs__list-item">Рыночная цена за услугу от 3 000 рублей.</li>							
+									</ol>	
+							<p class="tabs__text medium">Обратитесь за помощью в компанию ООО «Независимая профессиональная оценка». Гарантируем, что наш отчет об оценке примет любой банк или вернем всю сумму потраченную на услугу. </p>	
 						</div>
-					</div>				
+					</div>
+							<!-- специальное предложение -->
+							<div class="special-offer valuation special-offer--margin">
+								<div class="special-offer__wrap">
+									<div class="special-offer__col special-offer__col--tac">
+										<div class="special-offer__img">
+											<img src="./img/valuation/pig.png" alt="специальное предложение">
+										</div>
+										<div class="special-offer-title">
+											<div class="special-offer__title">Спецпредложение</div>
+											<span class="special-offer__text special-offer__subtitle"><span class="special-offer__text--medium">Коллективная оценка квартиры</span> для ипотеки в новостройках</span>
+										</div>
+									</div>
+									<div class="special-offer__col">
+										<p class="special-offer__text special-offer__descr">Выгодные условия 
+										<span class="special-offer__text--medium">для групп от 5 квартир.</span> 	Объединятесь с соседями для коллективного заказа!
+										Оценка одной квартиры <span class="special-offer__text--primary special-offer__text--medium">всего 2500&nbsp;р.</span>
+										</p>
+									</div>
+								</div>
+							</div>			
 					<!-- секция с формой -->
-					<div class="question question--primary tabs__question tabs__question--mt">
+					<div class="question question--primary tabs__question">
 						<div class="question-side tabs__question-side">
 							<div class="question-side__left tabs__question-side-left">
-								<h2 class="title question__title title--primary tabs__question-title tabs__question-title--mb">Собираетесь открыть ООО?</h2>
-								<p class="question__subtitle tabs__question-subtitle">Всего 6 шагов до результата</p>
-								<ol class="list list--order list--maw registration-OOO__list">
-									<li class="list__item registration-OOO__list-item">Позвоните нам <a href="tel:+78129003014">+7&nbsp;(812)&nbsp;900&#8209;30&#8209;14.</a> или оставьте заявку через форму обратной связи</li>
-									<li class="list__item registration-OOO__list-item">Мы уточним детали вашей заявки и примем заказ</li>
-									<li class="list__item registration-OOO__list-item">Далее мы подготавливаем документы </li>
-									<li class="list__item registration-OOO__list-item">Вы встречаетесь с нотариусом для подписания 
-										и заверения документов</li>
-									<li class="list__item registration-OOO__list-item">Подаем документацию в ИФНС и забираем обратно</li>
-									<li class="list__item registration-OOO__list-item">В итоге через 6-10 рабочих дней после подачи заявки, 
-										вы получаете на руки пакет документов через курьера или в офисе</li>
-								</ol>	
+								<h2 class="title question__title title--primary tabs__question-title tabs__question-title--mb tabs__question-title--maxwidth">Всего 5 шагов
+									</h2>
+								<p class="question__subtitle tabs__question-subtitle tabs__question-subtitle--size">и отчет у вас на руках!</p>	
+									<ol class="list list--order apartment__list">
+										<li class="list__item apartment__list-item">Оставьте свои имя и номер телефона или свяжитесь 
+											с нами: <a href="tel:+78129003014">+7&nbsp;(812)&nbsp;900&#8209;30&#8209;14.</a></li>
+										<li class="list__item apartment__list-item">Подготовьте документы и передайте их оценщику 
+											на осмотре или пришлите нам: <a href="mailto:info@npo-spb.ru">info@npo-spb.ru</a></li>
+										<li class="list__item apartment__list-item">Осмотр возможен в любое удобное для вас время, включая выходные и праздничные дни</li>
+										<li class="list__item apartment__list-item">Расчет стоимости объекта</li>
+										<li class="list__item apartment__list-item">Ваш отчет готов!</li>
+									
+									</ol>	
 							</div>
 							<div class="question-side__right tabs__question-side-right">
 								<div class="question-block question-block__size tabs__question-block-size">
 									<div class="question-block__inner tabs__question-block-inner">
-										<form class="form question-block__form tabs__form registration-OOO__form">
+										<form class="form question-block__form tabs__form apartment__form">
 											<div class="question-block__group tabs__question-block-group">
 												<label for="user-name"
 													class="label label__relative question-block__label label--primary tabs__question-label">Введите свое имя</label>
@@ -273,7 +294,7 @@
 													id="user-phone" placeholder="+7 (911) 000-00-00">
 											</div>
 											<div class="question-block__group tabs__question-block-group">
-												<button class="button question-block__button tabs__question-block-button button--primary registration-OOO_button"><span>Оставить
+												<button class="button question-block__button tabs__question-block-button button--primary changing_button"><span>Оставить
 														заявку</span></button>
 											</div>
 											<div class="question-block__group tabs__question-block-group">
@@ -288,70 +309,84 @@
 						</div>
 					</div>
 				</div>
-				<!-- вторая вкладка - Плюсы ООО -->
+				<!-- вторая вкладка - Методы оценки -->
 				<div class="tabs__content tabs__content-advantages fade">
 					<!-- текст с описанием -->
+					<h2 class="tabs__description-title tabs__description-title--limit subtitle subtitle--primary subtitle--mb">Содержание отчета об оценке</h2>
 					<div class="description tabs__description tabs__wrap">
-						<div class="tabs__col">						
-							<div class="tabs__text medium tabs__list-title">Существует несколько плюсов при выборе такой формы ведения бизнеса:</div>
+						<div class="tabs__col">
+							<div class="tabs__text medium tabs__list-title">В ходе экспертизы мы составляем независимый отчёт 
+								об объекте исследования, который содержит:</div>
 							<ul class="list tabs__list list--secondary">
-								<li class="list__item tabs__list-item">привлечь владельца Общества по долгам компании сложнее;</li>
-								<li class="list__item tabs__list-item">возможны вливания не только от российских, но и от зарубежных коллег;</li>
-								<li class="list__item tabs__list-item">отсутствуют ограничения по выбору рода деятельности;</li>
-								<li class="list__item tabs__list-item">система управления простая и допускает смену 
-									руководящего состава;</li>							
-								<li class="list__item tabs__list-item">возможность создания дочерних предприятий;</li>							
-								<li class="list__item tabs__list-item">только ООО может официально привлекать новых 
-									партнёров и продавать фирму как целиком, так и частями. </li>							
-							</ul>
-							<p class="tabs__text">Благодаря этому, интерес к сотрудничеству с ЮЛ выше. </p>
+								<li class="list__item tabs__list-item">важные сведения, касающиеся заказчика и исполнителя, их реквизиты;</li>
+								<li class="list__item tabs__list-item">описание того, как проводится оценка стоимости 
+									и описание объекта исследования и экспертизы;</li>
+								<li class="list__item tabs__list-item">конечный расчет рыночной стоимости;</li>
+								<li class="list__item tabs__list-item">обзор рынка недвижимости;</li>
+								<li class="list__item tabs__list-item">фотографии объекта недвижимости и копии документов, представленные заказчиком;</li>							
+								<li class="list__item tabs__list-item">	отчёт имеет твёрдую обложку, содержит подписи 
+									и нашу печать, страницы пронумерованы.</li>							
+							</ul>	
+					
 						</div>
 						<div class="tabs__col">
-							<p class="tabs__text"><span class="medium">Однако следует учесть,  
-							</span>что процесс ликвидации или банкротства фирмы сложнее, чем для ИП. 
-						</p>	
-						<div class="tabs__text medium tabs__list-title">Регистрация ООО отличается от процедуры ИП:</div>
-						<ol class="list list--order registration-OOO__list">
-							<li class="list__item registration-OOO__list-item">Требуется счет в банке и печать.</li>
-							<li class="list__item registration-OOO__list-item">	Создается устав компании.</li>
-							<li class="list__item registration-OOO__list-item">Размер уставного капитала для ООО от 10 000 руб.</li>
-						</ol>	
-							<p class="tabs__text xs-hidden">Это основные условия для успешной регистрации ООО.</p>	
-							<p class="tabs__text">Доверьте оформление своего дела компетентным специалистам. Мы уже открыли 50 новых компаний. 
-								Гарантируем вернуть деньги, если пришел отказ ИФНС 
-								в регистрации. 
-							</p>	
+							<p class="tabs__text">Собираясь продать квартиру и не продешевить, вам потребуется узнать реальную стоимость имущества. 
+								Для продажи нужна реальная рыночная цена, чтобы выручить максимум из этой сделки. Но столько факторов, из-за которых цена может измениться, учесть трудно.</p>					
+							<p class="tabs__text"><span class="medium">Команда «Независимая профессиональная оценка» 
+								решит эти вопросы. </span>Эксперты оценят состояние дома или квартиры в Санкт-Петербурге и Ленинградской области 
+								с полным или кратким отчётом.</p>				
 						</div>
-					</div>			
+					</div>	
+					<div class="warning">
+						<img src="./img/valuation/stamp.png" alt="штамп" class="warning-bg">
+						<div class="warning__wrap">
+							<div class="warning__title">
+								<div class="warning__img">
+									<img src="./img/valuation/warning.png" alt="предупреждение">
+								</div>
+								<span class="warning__text warning__text--medium warning__text--ml warning__text--limit warning__text--bigger">Отчет об оценке выпускается 
+									в одном экземпляре! </span>
+							</div>
+							<div class="warning-descr">
+								<span class="warning__text">При необходимости вы можете заказать множество копий. </span>							 
+							</div>							
+						</div>
+					</div>		
 				</div>
 				<!-- третья вкладка - Стоимость -->
-				<div class="tabs__content prices tabs__content-prices  fade">
-					<h2 class="prices__title subtitle subtitle--primary">Стоимость услуги</h2>
+				<div class="tabs__content prices tabs__content-prices  fade">			
+					<h2 class="prices__title subtitle subtitle--primary">Стоимость услуг </h2>
 					<!-- таблица с ценами-->
-					<table class="prices__table prices__table--three">
+					<table class="prices__table prices__table--three apartment__table">
 						<tr>
-							<th>Услуга</th><th>Сроки</th><th>Стоимость</th>
+							<th>Объект недвижимости</th><th class="four-col">Сроки</th><th>Стоимость</th>
 						</tr>
-						<tr><td>Регистрация ООО</td><td>6-10 раб. дней</td><td>30 000 руб.</td></tr>					
-					</table>
+						<tr><td>Оценка квартиры</td><td>1-3 раб. дня</td><td>3 000 руб.</td></tr>					
+						<tr><td>Срочная оценка </td><td>1 раб. день</td><td>6 000 руб.</td></tr>					
+						<tr><td><span class="primary">Акция!</span> Оценка от 5 квартир </td><td>3-4 раб. дня</td><td>2 500 руб./1 кв.</td></tr></table>
+					<span class="prices__table-descr prices__table-descr--m0 prices__table-descr--mt28">* Стоимость указана в пределах КАД, а также Мурино, Кудрово</span>
+					<span class="prices__table-descr prices__table-descr--m0">* Выезд оценщика за пределы КАД (1000 руб. + 50 руб./км.)</span>
+					<span class="prices__table-descr prices__table-descr--m0">* Акция «Коллективная оценка» актуальна для квартир в новостройках</span>
 				</div>
 				<!-- четвертая вкладка - Список документов -->
 				<div class="tabs__content documents tabs__content-documents  fade">
-					<h2 class="documents__title subtitle subtitle--primary">Примерные сведения и документы</h2>
+					<h2 class="documents__title subtitle subtitle--primary">Документы для оценки квартиры</h2>
 					<ul class="category-list">
-						<li class="category-list__item category-list__item-open"><div class="category-list__dropdown">Регистрация ООО в СПб</div>
+						<li class="category-list__item category-list__item-open"><div class="category-list__dropdown">Для первичного рынка (новостройки)</div>
 							<ul class="category-list-document category-list-document-show">
-								<li class="category-list-document__item category-list-document__item--mb24"><span class="category-list-document__item-text">Система налогообложения;</span></li>
-								<li class="category-list-document__item category-list-document__item--mb24"><span class="category-list-document__item-text">Заявление (форма Р11001),
-									квитанция с оплатой госпошлины;</span></li>
-								<li class="category-list-document__item category-list-document__item--mb24"><span class="category-list-document__item-text">Сведения о долях участников 
-									и сумме уставного капитала;</span></li>
-								<li class="category-list-document__item category-list-document__item--mb24"><span class="category-list-document__item-text">Фактический (основной) 
-									вид деятельности фирмы 
-									и дополнительные;	</span></li>
-								<li class="category-list-document__item category-list-document__item--mb24"><span class="category-list-document__item-text">Документы на юр. адрес 
-									или гарантийное письмо собственника (при аренде);</span></li>
-								<li class="category-list-document__item category-list-document__item--mb24"><span class="category-list-document__item-text">Решение одного участника, если участник не один, то протокол и договор об учреждении Общества.</span></li>
+								<li class="category-list-document__item"><span class="category-list-document__item-text">Акт приема-передачи квартиры;</span></li>
+								<li class="category-list-document__item"><span class="category-list-document__item-text">Паспорт заказчика;</span></li>
+								<li class="category-list-document__item"><span class="category-list-document__item-text">План квартиры после обмеров <span class="xs-hidden">(поэтажный план).</span></span></li>																					
+							</ul>
+						</li>
+						<li class="category-list__item"><div class="category-list__dropdown">Для вторичного рынка</div>
+							<ul class="category-list-document ">
+								<li class="category-list-document__item"><span class="category-list-document__item-text">Выписка ЕГРН/Свидетельство 
+									о регистрации права;</span></li>
+								<li class="category-list-document__item"><span class="category-list-document__item-text">Паспорт заказчика;</span></li>
+								<li class="category-list-document__item"><span class="category-list-document__item-text">Технический или кадастровый 
+									паспорт на квартиру;</span></li>							
+								<li class="category-list-document__item"><span class="category-list-document__item-text">Форма 7 (при наличии).</span></li>
 							</ul>
 						</li>				
 					</ul>

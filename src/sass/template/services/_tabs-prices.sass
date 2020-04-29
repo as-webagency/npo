@@ -10,24 +10,51 @@
       font-size: 20px
       font-weight: 500
       text-align: left
-      padding: 21px 0 21px 73px
-      background-color: #f2f9fd
-      &:nth-of-type(2)
-        width: 212px  
-      &.second
-        width: 300px 
-              
+      padding: 21px 0 
+      background-color: #f2f9fd        
     td
       color: $text
       font-size: 20px
       font-weight: 400
-      padding: 21px 0 21px 73px
+      padding: 21px 0
     tr      
       &:nth-of-type(2n+2)
-        padding: 20px
         background: rgba($text, 0.02)
         td
-          padding: 20px 0 15px 73px
+          padding-top: 20px
+          padding-bottom: 15px
+    th, td
+      width: 18%
+      &:first-of-type
+        padding-left: 6%
+        width: 77%
+      &:last-of-type
+        padding-right: 50px
+    &--three
+      th, td
+        &:first-of-type
+          width: 64%
+    &--four
+      margin-bottom: 45px
+      th, td
+        &:first-of-type
+          width: 39%
+      
+    &-descr
+      display: inline-block
+      opacity: 0.4
+      color: $text
+      font-size: 14px
+      font-weight: 400
+      max-width: 570px
+      margin-bottom: 48px
+      margin-top: 28px
+      &--m0
+        display: block
+        margin: 0
+      &--mt28
+        margin-top: 28px
+
 
         
 

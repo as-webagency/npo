@@ -1,18 +1,21 @@
-.special-offer
+.special-offer  
   margin: 81px 0 28px
   background-color: #fafcfe
+  &--margin
+    margin: 86px 0 117px 
   &__wrap
     display: flex
-    align-items: stretch
-    justify-content: space-between
+    align-items: center
+    justify-content: space-between   
   &__col
     display: flex
     align-items: center
     justify-content: start
-    width: 48%
+    width: 49%
   &__img
     margin-top: -30px
     margin-left: 20px
+    margin-right: 20px
   &__title
     color: $textHover
     font-size: 30px
@@ -31,3 +34,19 @@
       font-weight: 500
     &--primary
       color: $textHover
+
+
+.valuation
+  .special-offer      
+    &__col     
+      justify-content: start
+      width: 49%
+      &--tac
+        justify-content: center  
+    &__text
+      max-width: 490px  
+    &__subtitle      
+      display: block
+      max-width: 300px 
+    
+
